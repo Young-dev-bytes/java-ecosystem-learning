@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="91d1bbda-457a-4642-ab5f-244769ff7d9d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/lang/CharSequence.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/lang/Iterable.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/lang/Object.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/lang/Runtime.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/lang/StringBuffer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/lang/Thread.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/util/Arrays.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/util/Collection.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/util/List.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="2Wy7mpMvZ33mibNyjg7d8mno2dN" />
+  <component name="ProjectViewState">
+    <option name="flattenModules" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.splitter.proportion" value="0.3058104" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="java_basic._1102_innerclass.c" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/java_basic/_1122_thread/c" />
+      <recent name="$PROJECT_DIR$/src/java_basic/_1121_tankGame/b-01" />
+      <recent name="$PROJECT_DIR$/src/design_patterns/SOLIDDesignPrinciples/SRP" />
+      <recent name="$PROJECT_DIR$/src/java_basic/_1102_innerclass/d" />
+    </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="java_basic._1106_exception.a.Exception01" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="java_basic._1109_collection.map.b" />
+      <recent name="java_basic._1109_collection.linkedList.b" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="java_basic._1127_IO.c" />
+      <recent name="java_basic._1121_tankGame.b" />
+      <recent name="java_basic._1104_wrapper.b" />
+      <recent name="java_basic._1103_enum.b" />
+      <recent name="java_basic._1102_interface.a" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Demo_ (1)">
+    <configuration name="Demo_ (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_basic._1127_IO.f.Demo_" />
+      <module name="java-tutorial-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_basic._1127_IO.f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_basic._1129_reflection.a.Demo_" />
+      <module name="java-tutorial-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_basic._1129_reflection.a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_ (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_basic._1129_reflection.a.Main_" />
+      <module name="java-tutorial-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_basic._1129_reflection.a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_ (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_basic._1129_reflection.b.Main_" />
+      <module name="java-tutorial-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_basic._1129_reflection.b.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Print_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_basic._1127_IO.f.Print_" />
+      <module name="java-tutorial-beginners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_basic._1127_IO.f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Print_" />
+      <item itemvalue="Application.Main_ (1)" />
+      <item itemvalue="Application.Demo_" />
+      <item itemvalue="Application.Main_ (3)" />
+      <item itemvalue="Application.Demo_ (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo_ (1)" />
+        <item itemvalue="Application.Main_ (1)" />
+        <item itemvalue="Application.Main_ (3)" />
+        <item itemvalue="Application.Demo_" />
+        <item itemvalue="Application.Print_" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91d1bbda-457a-4642-ab5f-244769ff7d9d" name="Default Changelist" comment="" />
+      <created>1697693130519</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697693130519</updated>
+      <workItem from="1697693131627" duration="3294000" />
+      <workItem from="1697763843540" duration="42000" />
+      <workItem from="1697763899569" duration="1988000" />
+      <workItem from="1697779354509" duration="4571000" />
+      <workItem from="1697858620750" duration="9745000" />
+      <workItem from="1697949921807" duration="8785000" />
+      <workItem from="1698035992025" duration="6906000" />
+      <workItem from="1698116248621" duration="533000" />
+      <workItem from="1698124987059" duration="157000" />
+      <workItem from="1698135132174" duration="633000" />
+      <workItem from="1698135945697" duration="14000" />
+      <workItem from="1698229786370" duration="2404000" />
+      <workItem from="1698290533926" duration="16996000" />
+      <workItem from="1698376455564" duration="5757000" />
+      <workItem from="1698467351722" duration="11358000" />
+      <workItem from="1698629689345" duration="12074000" />
+      <workItem from="1698661079312" duration="56000" />
+      <workItem from="1698728351880" duration="7976000" />
+      <workItem from="1698805697780" duration="19861000" />
+      <workItem from="1698891102231" duration="12526000" />
+      <workItem from="1698976343968" duration="10733000" />
+      <workItem from="1698994733013" duration="9929000" />
+      <workItem from="1699012867569" duration="2195000" />
+      <workItem from="1699082595003" duration="2362000" />
+      <workItem from="1699235948589" duration="22853000" />
+      <workItem from="1699319023039" duration="5419000" />
+      <workItem from="1699332544800" duration="10398000" />
+      <workItem from="1699410470506" duration="4334000" />
+      <workItem from="1699491979422" duration="9240000" />
+      <workItem from="1699514047842" duration="6877000" />
+      <workItem from="1699579055951" duration="9088000" />
+      <workItem from="1699838412434" duration="17390000" />
+      <workItem from="1699925477099" duration="19443000" />
+      <workItem from="1700011155950" duration="8396000" />
+      <workItem from="1700022468564" duration="10567000" />
+      <workItem from="1700042349364" duration="7792000" />
+      <workItem from="1700099575029" duration="2898000" />
+      <workItem from="1700186132636" duration="13564000" />
+      <workItem from="1700372891630" duration="6258000" />
+      <workItem from="1700441810627" duration="20622000" />
+      <workItem from="1700528884922" duration="21452000" />
+      <workItem from="1700613537216" duration="4194000" />
+      <workItem from="1700633303609" duration="1627000" />
+      <workItem from="1700635147714" duration="5004000" />
+      <workItem from="1700654668953" duration="3298000" />
+      <workItem from="1700706808934" duration="6791000" />
+      <workItem from="1700792842510" duration="1041000" />
+      <workItem from="1700794719060" duration="17000" />
+      <workItem from="1700794746485" duration="54000" />
+      <workItem from="1700795339656" duration="44000" />
+      <workItem from="1700796043204" duration="76000" />
+      <workItem from="1700797914620" duration="737000" />
+      <workItem from="1700799997909" duration="12000" />
+      <workItem from="1700800027310" duration="43000" />
+      <workItem from="1700800085461" duration="432000" />
+      <workItem from="1700802443610" duration="699000" />
+      <workItem from="1700804025116" duration="34000" />
+      <workItem from="1700804240203" duration="7000" />
+      <workItem from="1700807438313" duration="6000" />
+      <workItem from="1700807469428" duration="229000" />
+      <workItem from="1700807904667" duration="9000" />
+      <workItem from="1700809435390" duration="101000" />
+      <workItem from="1700809571028" duration="3146000" />
+      <workItem from="1700813184077" duration="60000" />
+      <workItem from="1700814412932" duration="390000" />
+      <workItem from="1700816242642" duration="286000" />
+      <workItem from="1700816554588" duration="602000" />
+      <workItem from="1700817176034" duration="281000" />
+      <workItem from="1700818690135" duration="67000" />
+      <workItem from="1700818844854" duration="80000" />
+      <workItem from="1700819345348" duration="129000" />
+      <workItem from="1700819748412" duration="2449000" />
+      <workItem from="1700878689765" duration="9507000" />
+      <workItem from="1701046300328" duration="19933000" />
+      <workItem from="1701137905909" duration="13939000" />
+      <workItem from="1701226722524" duration="15392000" />
+      <workItem from="1701306487919" duration="96000" />
+      <workItem from="1701312837961" duration="8927000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1122_thread/a/Run_.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1122_thread/b/Main_.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1109_collection/arrayList/a/Demo.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1109_collection/arrayList/a/Demo.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1109_collection/arrayList/a/Demo.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/util/AbstractCollection.java</url>
+          <line>453</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1109_collection/arrayList/d/Demo.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1122_thread/d/Money_.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1127_IO/b/Main_.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1127_IO/b/Main_.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1127_IO/b/FileReader_.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1127_IO/d/Object_.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1127_IO/d/Object_.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1127_IO/d/Object_.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1127_IO/f/Print_.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1127_IO/f/Print_.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/io/PrintWriter.java</url>
+          <line>425</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/io/PrintStream.java</url>
+          <line>448</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/lang/Class.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java_basic/_1129_reflection/a/Demo_.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_tutorial_beginners$A.ic" NAME="A Coverage Results" MODIFIED="1699240389418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>java_basic._1104_wrapper.b.*</FILTER>
+    </SUITE>
+  </component>
+</project>

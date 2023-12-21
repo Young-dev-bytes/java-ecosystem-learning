@@ -1,0 +1,13 @@
+<p>In Step 03 and Step 04 - we create person table and insert data into it. </p><p><em>Spring Boot version 2+ has a minor change.</em></p><p><br></p><p>All DDL(Data Definition Language) - Table Creations should be done in <em>schema.sql </em></p><p><strong><em>Listing 1 - schema.sql</em></strong></p><pre class="prettyprint linenums">create table person
+(
+   id integer not null,
+   name varchar(255) not null,
+   location varchar(255),
+   birth_date timestamp,
+   primary key(id)
+);</pre><p><br></p><p>All DML(Data Manipulation Language) - Data Updates should be done in <em>data.sql</em></p><p><strong><em>Listing 2 - data.sql</em></strong></p><pre class="prettyprint linenums">INSERT INTO PERSON (ID, NAME, LOCATION, BIRTH_DATE ) 
+VALUES(10001,  'Ranga', 'Hyderabad',sysdate());
+INSERT INTO PERSON (ID, NAME, LOCATION, BIRTH_DATE ) 
+VALUES(10002,  'James', 'New York',sysdate());
+INSERT INTO PERSON (ID, NAME, LOCATION, BIRTH_DATE ) 
+VALUES(10003,  'Pieter', 'Amsterdam',sysdate());</pre>
