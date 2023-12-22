@@ -1,4 +1,4 @@
-package programming;
+package programming.FP03;
 
 import java.util.List;
 import java.util.function.BinaryOperator;
@@ -12,17 +12,17 @@ public class FP03FunctionalInterfaces {
 
         List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
 
-        // Predicate<Integer> integerPredicate = num -> num % 2 == 0;
-        /*Predicate<Integer> integerPredicate = new Predicate<Integer>() {
+        // Predicate<Integer> filterPredicate = num -> num % 2 == 0;
+        Predicate<Integer> filterPredicate = new Predicate<Integer>() {
             @Override
             public boolean test(Integer num) {
                 return num % 2 == 0;
             }
-        };*/
-
-        Predicate<Integer> filterPredicate = (num) -> {
-            return num % 2 == 0;
         };
+
+        /*Predicate<Integer> filterPredicate = (num) -> {
+            return num % 2 == 0;
+        };*/
 
 
         // Function<Integer, Integer> integerIntegerFunction = num -> num * num;
@@ -35,20 +35,22 @@ public class FP03FunctionalInterfaces {
         Function<Integer, Integer> mapFunction = (num) -> {
             return num * num;
         };
+
+
         // Consumer<Integer> printlnConsumer = System.out::println;
-        /*Consumer<Integer> printlnConsumer = new Consumer<Integer>() {
+        Consumer<Integer> printlnConsumer = new Consumer<Integer>() {
             @Override
             public void accept(Integer number) {
                 System.out.println(number);
             }
-        };*/
+        };
         // Consumer<Integer> printlnConsumer = number -> System.out.println(number);
         // Consumer<Integer> printlnConsumer = number -> FP03FunctionalInterfaces.printT(number);
-        Consumer<Integer> printlnConsumer = FP03FunctionalInterfaces::printT;
+        // Consumer<Integer> printlnConsumer = FP03FunctionalInterfaces::printT;
         numbers.stream()
                 .filter(filterPredicate)
                 .map(mapFunction)
-                .forEach(printlnConsumer);
+                .forEach(num -> printlnConsumer.accept(num));
 
 
         // BinaryOperator<Integer> binaryOperator = Integer::sum;

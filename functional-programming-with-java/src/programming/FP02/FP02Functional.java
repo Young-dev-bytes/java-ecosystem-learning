@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class FP02Functional {
     public static void main(String[] args) {
-        List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15,90);
+        List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15, 90);
 
         numbers.stream()
                 .map(num -> num * num)
@@ -30,7 +30,7 @@ public class FP02Functional {
                 .reduce(0, Integer::sum);*/
 
         return numbers.stream()
-                .reduce(Integer.MIN_VALUE, (x, y) -> Integer.max(x,y));
+                .reduce(Integer.MIN_VALUE, (x, y) -> Integer.max(x, y));
 
     }
 
