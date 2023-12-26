@@ -22,12 +22,12 @@ public class CurrencyExchangeController {
 
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
     public ExchangeValue retrieveExchangeValue(
-                                                @PathVariable String from,
-                                                @PathVariable String to) {
+            @PathVariable String from,
+            @PathVariable String to) {
 
-        ExchangeValue exchangeValue = exchangeValueRepository.findByFromAndTo(from,to);
-        exchangeValue.setPort(
-                Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port"))));
+        ExchangeValue exchangeValue = exchangeValueRepository.findByFromAndTo(from, to);
+        exchangeValue.setEnvironment(
+                Objects.requireNonNull(environment.getProperty("local.server.port")));
         return exchangeValue;
     }
 }

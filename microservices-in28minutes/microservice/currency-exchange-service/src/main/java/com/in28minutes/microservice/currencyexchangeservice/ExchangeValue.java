@@ -20,7 +20,7 @@ public class ExchangeValue {
 
     private BigDecimal conversionMultiple;
 
-    private int port;
+    private String environment;
 
     public ExchangeValue() {
     }
@@ -31,7 +31,6 @@ public class ExchangeValue {
         this.to = to;
         this.conversionMultiple = conversionMultiple;
     }
-
 
     public Long getId() {
         return id;
@@ -65,14 +64,13 @@ public class ExchangeValue {
         this.conversionMultiple = conversionMultiple;
     }
 
-    public int getPort() {
-        return port;
+    public String getEnvironment() {
+        return environment;
     }
 
-    public void setPort(int port) {
-        this.port = port;
+    public void setEnvironment(String environment) {
+        this.environment = environment;
     }
-
 
     @Override
     public String toString() {
@@ -81,7 +79,7 @@ public class ExchangeValue {
                 ", from='" + from + '\'' +
                 ", to='" + to + '\'' +
                 ", conversionMultiple=" + conversionMultiple +
-                ", port=" + port +
+                ", environment='" + environment + '\'' +
                 '}';
     }
 }
