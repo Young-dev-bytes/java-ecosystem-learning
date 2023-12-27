@@ -1,5 +1,6 @@
 package com.amigoscode.customer;
 
+import com.amigoscode.amqp.RabbitMQMessageProducer;
 import com.amigoscode.clients.fraud.FraudCheckResponse;
 import com.amigoscode.clients.fraud.FraudClient;
 import com.amigoscode.clients.notification.NotificationClient;
@@ -14,16 +15,19 @@ public class CustomerService {
     private final RestTemplate restTemplate;
     private final FraudClient fraudClient;
     private final NotificationClient notificationClient;
+    private final RabbitMQMessageProducer rabbitMQMessageProducer;
 
 
     public CustomerService(CustomerRepository customerRepository,
                            RestTemplate restTemplate,
                            FraudClient fraudClient,
-                           NotificationClient notificationClient) {
+                           NotificationClient notificationClient,
+                           RabbitMQMessageProducer rabbitMQMessageProducer) {
         this.customerRepository = customerRepository;
         this.restTemplate = restTemplate;
         this.fraudClient = fraudClient;
         this.notificationClient = notificationClient;
+        this.rabbitMQMessageProducer = rabbitMQMessageProducer;
     }
 
     public void registerCustomer(CustomerRegistrationRequest customerRegistrationRequest) {
@@ -57,16 +61,23 @@ public class CustomerService {
             throw new IllegalStateException("fraudster");
         }
 
-        notificationClient.sendNotification(NotificationRequest
+        // send notification
+        NotificationRequest notificationRequest = NotificationRequest
                 .builder()
                 .toCustomerId(customer.getId())
                 .toCustomerName(customer.getFirstName().concat(customer.getLastName()))
                 .email(customer.getEmail())
                 .message(String.format("Hi %s, welcome to Amigoscode...", customer.getFirstName()))
-                .build());
+                .build();
+
+        // notificationClient.sendNotification(notificationRequest);
 
 
-        // todo: send notification
+        rabbitMQMessageProducer.publish(
+                notificationRequest,
+                "internal.exchange",
+                "internal.notification.routing-key");
+
 
     }
 }
