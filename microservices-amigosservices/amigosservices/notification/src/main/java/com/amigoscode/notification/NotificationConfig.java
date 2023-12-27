@@ -22,7 +22,6 @@ public class NotificationConfig {
     @Value("${rabbitmq.routing-keys.internal-notification}")
     private String internalNotificationRoutingKey;
 
-
     @Bean
     public TopicExchange internalTopicExchange() {
         return new TopicExchange(this.internalExchange);
