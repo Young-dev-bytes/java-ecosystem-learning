@@ -23,6 +23,4 @@ public class CustomerController {
         customerService.registerCustomer(customerRegistrationRequest);
 
     }
-
-
 }
