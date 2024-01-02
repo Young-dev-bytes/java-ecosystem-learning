@@ -18,7 +18,9 @@ public class CurrencyExchangeController {
 
     private final ExchangeValueRepository exchangeValueRepository;
 
-    public CurrencyExchangeController(Environment environment, ExchangeValueRepository exchangeValueRepository) {
+    public CurrencyExchangeController(
+            Environment environment,
+            ExchangeValueRepository exchangeValueRepository) {
         this.environment = environment;
         this.exchangeValueRepository = exchangeValueRepository;
     }
