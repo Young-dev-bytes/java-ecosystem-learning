@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  currency-exchange:
+    image: younghub/micro-v2-currency-exchange-service:0.0.1-SNAPSHOT
+    mem_limit: 700m
+    ports:
+      - "8000:8000"
+    networks:
+      - currency-network
+    depends_on:
+      - naming-server
+  naming-server:
+    image: younghub/micro-v2-naming-server:0.0.1-SNAPSHOT
+    mem_limit: 1g
+    ports:
+      - "8761:8761"
+    networks:
+      - naming-network
+networks:
+  currency-network:
+  naming-network:
