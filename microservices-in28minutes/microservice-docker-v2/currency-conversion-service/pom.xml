@@ -15,7 +15,7 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>16</java.version>
+        <java.version>17</java.version>
         <spring-cloud.version>2020.0.2</spring-cloud.version>
     </properties>
 
@@ -52,10 +52,10 @@
             <artifactId>spring-cloud-sleuth-zipkin</artifactId>
         </dependency>
 
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.amqp</groupId>
             <artifactId>spring-rabbit</artifactId>
-        </dependency>-->
+        </dependency>
 
 
         <dependency>
@@ -90,17 +90,9 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>in28min/mmv2-${project.artifactId}:${project.version}</name>
+                        <name>younghub/micro-v2-${project.artifactId}:${project.version}</name>
                     </image>
                     <pullPolicy>IF_NOT_PRESENT</pullPolicy>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>15</source>
-                    <target>15</target>
                 </configuration>
             </plugin>
         </plugins>

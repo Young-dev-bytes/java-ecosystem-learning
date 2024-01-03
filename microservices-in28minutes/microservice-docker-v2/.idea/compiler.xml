@@ -14,7 +14,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="17" />
-      <module name="currency-conversion-service" target="15" />
+      <module name="currency-conversion-service" target="17" />
       <module name="currency-exchange-service" target="17" />
       <module name="naming-server" target="17" />
     </bytecodeTargetLevel>
