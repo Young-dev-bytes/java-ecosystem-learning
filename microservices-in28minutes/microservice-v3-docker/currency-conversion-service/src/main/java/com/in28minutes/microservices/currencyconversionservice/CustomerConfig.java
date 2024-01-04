@@ -1,5 +1,6 @@
 package com.in28minutes.microservices.currencyconversionservice;
 
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,5 +13,9 @@ public class CustomerConfig {
     @LoadBalanced
     public RestTemplate restTemplate() {
         return new RestTemplate();
+    }
+
+    public RestTemplate restTemplateT(RestTemplateBuilder restTemplateBuilder) {
+        return restTemplateBuilder.build();
     }
 }

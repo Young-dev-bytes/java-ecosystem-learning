@@ -5,8 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <!--<version>3.2.1</version>-->
-        <version>2.5.0</version>
+        <version>3.2.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.in28minutes.microservice</groupId>
@@ -16,8 +15,7 @@
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>17</java.version>
-        <!--<spring-cloud.version>2023.0.0</spring-cloud.version>-->
-        <spring-cloud.version>2020.0.2</spring-cloud.version>
+        <spring-cloud.version>2023.0.0</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
@@ -64,13 +62,18 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-sleuth</artifactId>
-            <!--<version>3.1.1</version>-->
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-observation</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-tracing-bridge-otel</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-exporter-zipkin</artifactId>
         </dependency>
 
         <dependency>
@@ -97,6 +100,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <image>
+                        <name>younghub/micro-v3-${project.artifactId}:${project.version}</name>
+                    </image>
+                    <pullPolicy>IF_NOT_PRESENT</pullPolicy>
+                </configuration>
             </plugin>
         </plugins>
     </build>
