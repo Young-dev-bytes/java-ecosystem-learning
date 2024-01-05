@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="todo-web-application-h2.war">
+    <root id="archive" name="02-todo-web-application-h2.war">
       <element id="artifact" artifact-name="02-todo-web-application-h2:war exploded" />
     </root>
   </artifact>
