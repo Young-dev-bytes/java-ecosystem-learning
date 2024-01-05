@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="02-todo-web-application-h2:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>02-todo-web-application-h2</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="todo-web-application-h2.war">
+      <element id="artifact" artifact-name="02-todo-web-application-h2:war exploded" />
+    </root>
+  </artifact>
+</component>
