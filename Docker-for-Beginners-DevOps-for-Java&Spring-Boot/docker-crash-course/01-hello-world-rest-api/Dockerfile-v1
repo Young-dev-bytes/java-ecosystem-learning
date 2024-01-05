@@ -1,0 +1,14 @@
+FROM openjdk:17-jdk-alpine
+
+#WORKDIR /app
+#COPY ./target/myapp.jar /app
+EXPOSE 8080
+
+#ARG JAR_FILE
+#ADD target/01-hello-world-rest-api.jar 01-hello-world-rest-api.jar
+#ADD target/${JAR_FILE} app.jar
+ADD target/*.jar app.jar
+
+
+#ENTRYPOINT ["sh","-c","java -jar /01-hello-world-rest-api.jar"]
+ENTRYPOINT ["sh","-c","java -jar /app.jar"]
