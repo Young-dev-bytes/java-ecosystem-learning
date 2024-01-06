@@ -72,19 +72,19 @@ private String desc;
 ### Launching MySQL using Docker
 
 ```
-docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:5.7
+docker run --detach --env MYSQL_ROOT_PASSWORD=root --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:5.7
 ```
 
 Using Custom Network
 
 ```
-docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 --network=web-application-mysql-network mysql:5.7
+docker run --detach --env MYSQL_ROOT_PASSWORD=root --env MYSQL_USER=young --env MYSQL_PASSWORD=young --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 --network=web-mysql-network mysql:8-oracle
 ```
 
 Using a Volume
 
 ```
-docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 --network=web-application-mysql-network --volume mysql-database-volume:/var/lib/mysql  mysql:5.7
+docker run --detach --env MYSQL_ROOT_PASSWORD=root --env MYSQL_USER=young --env MYSQL_PASSWORD=young --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 --network=web-mysql-network --volume mysql-database-volume:/var/lib/mysql mysql:8-oracle
 ```
 
 ### Launching Web App using Docker
