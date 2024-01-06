@@ -1,74 +1,53 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import HelloWorldService from '../../api/todo/HelloWorldService.js'
+import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { retrieveHelloWorldPathVariable } from "./api/HelloWorldApiService";
+import { useAuth } from "./security/AuthContext";
 
-class WelcomeComponent extends Component {
+export default function WelcomeComponent() {
+  const { username } = useParams();
+  const [message, setMessage] = useState(null);
+  const { token } = useAuth();
 
-    constructor(props) {
-        super(props)
-        this.retrieveWelcomeMessage = this.retrieveWelcomeMessage.bind(this)
-        this.state = {
-            welcomeMessage: ''
-        }
-        this.handleSuccessfulResponse = this.handleSuccessfulResponse.bind(this)
-        this.handleError = this.handleError.bind(this)
-    }
+  const callHelloWorldRestApi = () => {
+    // axios
+    //   .get("http://localhost:8080/hello-world")
+    //   .then((response) => successfulResponse(response))
+    //   .catch((error) => errorResponse(error))
+    //   .finally(() => console.log("clean up"));
 
-    render() {
-        return (
-            <>
-                <h1>Welcome!</h1>
-                <div className="container">
-                    Welcome {this.props.match.params.name}.
-                    You can manage your todos <Link to="/todos">here</Link>.
-                </div>
-                <div className="container">
-                    Click here to get a customized welcome message.
-                    <button onClick={this.retrieveWelcomeMessage}
-                        className="btn btn-success">Get Welcome Message</button>
-                </div>
-                <div className="container">
-                    {this.state.welcomeMessage}
-                </div>
+    // retrieveHelloWorldBean()
+    //   .then((response) => successfulResponse(response))
+    //   .catch((error) => errorResponse(error))
+    //   .finally(() => console.log("clean up"));
 
-            </>
-        )
-    }
+    retrieveHelloWorldPathVariable("Young", token)
+      .then((response) => successfulResponse(response))
+      .catch((error) => errorResponse(error))
+      .finally(() => console.log("clean up"));
+  };
 
-    retrieveWelcomeMessage() {
-        // HelloWorldService.executeHelloWorldService()
-        // .then( response => this.handleSuccessfulResponse(response) )
-
-        // HelloWorldService.executeHelloWorldBeanService()
-        // .then( response => this.handleSuccessfulResponse(response) )
-
-        HelloWorldService.executeHelloWorldPathVariableService(this.props.match.params.name)
-            .then(response => this.handleSuccessfulResponse(response))
-            .catch(error => this.handleError(error))
-    }
-
-    handleSuccessfulResponse(response) {
-        console.log(response)
-        this.setState({ welcomeMessage: response.data.message })
-    }
-
-    handleError(error) {
-
-        console.log(error.response)
-
-        let errorMessage = '';
-
-        if (error.message)
-            errorMessage += error.message
-
-        if (error.response && error.response.data) {
-            errorMessage += error.response.data.message
-        }
-
-        this.setState({ welcomeMessage: errorMessage })
-    }
-
+  const successfulResponse = (response) => {
+    console.log("successfulResponse");
+    console.log(response);
+    setMessage(response.data.message);
+  };
+  const errorResponse = (error) => {
+    console.log("errorResponse");
+    console.log(error);
+  };
+  return (
+    <div className="welcomeComponent">
+      <h1>Welcome {username}</h1>
+      <div>
+        {/* Manage your todos - <a href="/todos">Go here</a> */}
+        Manage your todos - <Link to="/todos">Go here</Link>
+      </div>
+      <div>
+        <button className="btn btn-success m-5" onClick={callHelloWorldRestApi}>
+          Call Hello World
+        </button>
+        {message}
+      </div>
+    </div>
+  );
 }
-
-
-export default WelcomeComponent

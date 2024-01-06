@@ -1,98 +1,64 @@
-import React, { Component } from 'react'
-import AuthenticationService from './AuthenticationService.js'
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "./security/AuthContext";
 
-class LoginComponent extends Component {
+export default function LoginComponent() {
+  const [username, setUsername] = useState("in28minutes");
+  const [password, setPassword] = useState("");
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const navigate = useNavigate();
 
-    constructor(props) {
-        super(props)
+  const { loginHandle } = useAuth();
 
-        this.state = {
-            username: 'in28minutes',
-            password: '',
-            hasLoginFailed: false,
-            showSuccessMessage: false
-        }
-        // this.handleUsernameChange = this.handleUsernameChange.bind(this)
-        // this.handlePasswordChange = this.handlePasswordChange.bind(this)
-        this.handleChange = this.handleChange.bind(this)
-        this.loginClicked = this.loginClicked.bind(this)
+  const handleUsernameChange = (event) => {
+    setUsername(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSubmit = async () => {
+    if (await loginHandle(username, password)) {
+      navigate(`/welcome/${username}`);
+    } else {
+      setShowErrorMessage(true);
     }
+  };
 
-    handleChange(event) {
-        //console.log(this.state);
-        this.setState(
-            {
-                [event.target.name]
-                    : event.target.value
-            }
-        )
-    }
-
-    // handleUsernameChange(event) {
-    //     console.log(event.target.name);
-    //     this.setState(
-    //         {
-    //             [event.target.name]
-    //               :event.target.value
-    //         }
-    //     )
-    // }
-
-    // handlePasswordChange(event) {
-    //     console.log(event.target.value);
-    //     this.setState({password:event.target.value})
-    // }
-
-    loginClicked() {
-        //in28minutes,dummy
-        // if(this.state.username==='in28minutes' && this.state.password==='dummy'){
-        //     AuthenticationService.registerSuccessfulLogin(this.state.username,this.state.password)
-        //     this.props.history.push(`/welcome/${this.state.username}`)
-        //     //this.setState({showSuccessMessage:true})
-        //     //this.setState({hasLoginFailed:false})
-        // }
-        // else {
-        //     this.setState({showSuccessMessage:false})
-        //     this.setState({hasLoginFailed:true})
-        // }
-
-        // AuthenticationService
-        // .executeBasicAuthenticationService(this.state.username, this.state.password)
-        // .then(() => {
-        //     AuthenticationService.registerSuccessfulLogin(this.state.username,this.state.password)
-        //     this.props.history.push(`/welcome/${this.state.username}`)
-        // }).catch( () =>{
-        //     this.setState({showSuccessMessage:false})
-        //     this.setState({hasLoginFailed:true})
-        // })
-        AuthenticationService
-            .executeJwtAuthenticationService(this.state.username, this.state.password)
-            .then((response) => {
-                AuthenticationService.registerSuccessfulLoginForJwt(this.state.username, response.data.token)
-                this.props.history.push(`/welcome/${this.state.username}`)
-            }).catch(() => {
-                this.setState({ showSuccessMessage: false })
-                this.setState({ hasLoginFailed: true })
-            })
-
-    }
-
-    render() {
-        return (
-            <div>
-                <h1>Login</h1>
-                <div className="container">
-                    {/*<ShowInvalidCredentials hasLoginFailed={this.state.hasLoginFailed}/>*/}
-                    {this.state.hasLoginFailed && <div className="alert alert-warning">Invalid Credentials</div>}
-                    {this.state.showSuccessMessage && <div>Login Sucessful</div>}
-                    {/*<ShowLoginSuccessMessage showSuccessMessage={this.state.showSuccessMessage}/>*/}
-                    User Name: <input type="text" name="username" value={this.state.username} onChange={this.handleChange} />
-                    Password: <input type="password" name="password" value={this.state.password} onChange={this.handleChange} />
-                    <button className="btn btn-success" onClick={this.loginClicked}>Login</button>
-                </div>
-            </div>
-        )
-    }
+  return (
+    <div className="login">
+      <h1>Time to Login!</h1>
+      {showErrorMessage && (
+        <div className="errorMessage">
+          Authentication Fail. Please check your credentials.
+        </div>
+      )}
+      <div className="loginForm">
+        <div>
+          <label>User Name:</label>
+          <input
+            type="text"
+            name="username"
+            value={username}
+            onChange={handleUsernameChange}
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+        </div>
+        <div>
+          <button type="button" name="login" onClick={handleSubmit}>
+            login
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }
-
-export default LoginComponent

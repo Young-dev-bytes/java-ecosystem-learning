@@ -1,16 +1,9 @@
-import React, { Component } from 'react'
-
-class LogoutComponent extends Component {
-    render() {
-        return (
-            <>
-                <h1>You are logged out</h1>
-                <div className="container">
-                    Thank You for Using Our Application.
-                </div>
-            </>
-        )
-    }
+export default function LogoutComponent() {
+  return (
+    <div className="logout">
+      <h1>You are log out!</h1>
+      <div>thank you for using our app! Come back soon!</div>
+      Footer
+    </div>
+  );
 }
-
-export default LogoutComponent

@@ -1,117 +1,134 @@
-import React, { Component } from 'react'
-import moment from 'moment'
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import TodoDataService from '../../api/todo/TodoDataService.js'
-import AuthenticationService from './AuthenticationService.js'
+import { useNavigate, useParams } from "react-router-dom";
+import {
+  createTodoApi,
+  retrieveTodoByIdApi,
+  updateTodoApi,
+} from "./api/TodoApiService";
+import { useEffect, useState } from "react";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import moment from "moment";
 
-class TodoComponent extends Component {
-    constructor(props) {
-        super(props)
+function TodoComponent() {
+  const navigate = useNavigate();
+  const { username, id } = useParams();
+  const [description, setDescription] = useState("");
+  const [targetDate, setTargetDate] = useState("");
 
-        this.state = {
-            id: this.props.match.params.id,
-            description: '',
-            targetDate: moment(new Date()).format('YYYY-MM-DD')
-        }
+  const retrieveTodo = () => {
+    if (id != -1) {
+      retrieveTodoByIdApi(username, id)
+        .then((response) => {
+          console.log(response);
+          setDescription(response.data.description);
+          setTargetDate(response.data.targetDate);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  };
 
-        this.onSubmit = this.onSubmit.bind(this)
-        this.validate = this.validate.bind(this)
+  const handleOnSubmit = (values) => {
+    console.log("submit", values);
+    const todo = {
+      id,
+      username,
+      description: values.description,
+      targetDate: values.targetDate,
+      done: false,
+    };
 
+    console.log("todo", todo);
+
+    console.log("id", id == -1);
+
+    if (id == -1) {
+      createTodoApi(username, todo)
+        .then((response) => {
+          console.log(response);
+          navigate("/todos");
+        })
+        .catch((error) => console.log(error));
+    } else {
+      updateTodoApi(username, id, todo)
+        .then((response) => {
+          console.log(response);
+          navigate("/todos");
+        })
+        .catch((error) => console.log(error));
+    }
+  };
+
+  const handleValidate = (values) => {
+    let errors = {
+      // description: "Enter a valid description",
+      // targetDate: "Enter a valid targetDate",
+    };
+    if (values.description.length <= 5) {
+      errors.description = "Enter at least 5 characters";
     }
 
-    componentDidMount() {
-
-        if (this.state.id === -1) {
-            return
-        }
-
-        let username = AuthenticationService.getLoggedInUserName()
-
-        TodoDataService.retrieveTodo(username, this.state.id)
-            .then(response => this.setState({
-                description: response.data.description,
-                targetDate: moment(response.data.targetDate).format('YYYY-MM-DD')
-            }))
+    if (
+      values.targetDate == null ||
+      values.targetDate == "" ||
+      !moment(values.targetDate).isValid()
+    ) {
+      errors.targetDate = "Enter a target date";
     }
+    console.log("validate", values);
 
-    validate(values) {
-        let errors = {}
-        if (!values.description) {
-            errors.description = 'Enter a Description'
-        } else if (values.description.length < 5) {
-            errors.description = 'Enter atleast 5 Characters in Description'
-        }
+    return errors;
+  };
 
-        if (!moment(values.targetDate).isValid()) {
-            errors.targetDate = 'Enter a valid Target Date'
-        }
+  useEffect(() => retrieveTodo(), [id]);
 
-        return errors
-
-    }
-
-    onSubmit(values) {
-        let username = AuthenticationService.getLoggedInUserName()
-
-        let todo = {
-            id: this.state.id,
-            description: values.description,
-            targetDate: values.targetDate
-        }
-
-        if (this.state.id === -1) {
-            TodoDataService.createTodo(username, todo)
-                .then(() => this.props.history.push('/todos'))
-        } else {
-            TodoDataService.updateTodo(username, this.state.id, todo)
-                .then(() => this.props.history.push('/todos'))
-        }
-
-        console.log(values);
-    }
-
-    render() {
-
-        let { description, targetDate } = this.state
-        //let targetDate = this.state.targetDate
-
-        return (
-            <div>
-                <h1>Todo</h1>
-                <div className="container">
-                    <Formik
-                        initialValues={{ description, targetDate }}
-                        onSubmit={this.onSubmit}
-                        validateOnChange={false}
-                        validateOnBlur={false}
-                        validate={this.validate}
-                        enableReinitialize={true}
-                    >
-                        {
-                            (props) => (
-                                <Form>
-                                    <ErrorMessage name="description" component="div"
-                                        className="alert alert-warning" />
-                                    <ErrorMessage name="targetDate" component="div"
-                                        className="alert alert-warning" />
-                                    <fieldset className="form-group">
-                                        <label>Description</label>
-                                        <Field className="form-control" type="text" name="description" />
-                                    </fieldset>
-                                    <fieldset className="form-group">
-                                        <label>Target Date</label>
-                                        <Field className="form-control" type="date" name="targetDate" />
-                                    </fieldset>
-                                    <button className="btn btn-success" type="submit">Save</button>
-                                </Form>
-                            )
-                        }
-                    </Formik>
-
-                </div>
-            </div>
-        )
-    }
+  return (
+    <div className="container">
+      <h1>Enter Todo Details</h1>
+      <div>
+        <Formik
+          initialValues={{ description, targetDate }}
+          enableReinitialize={true}
+          onSubmit={handleOnSubmit}
+          validate={handleValidate}
+          validateOnChange={false}
+          validateOnBlur={false}
+        >
+          {(props) => (
+            <Form>
+              <ErrorMessage
+                name="description"
+                component="div"
+                className="alert alert-warning"
+              />
+              <ErrorMessage
+                name="targetDate"
+                component="div"
+                className="alert alert-warning"
+              />
+              <fieldset className="form-group">
+                <label>Description</label>
+                <Field
+                  type="text"
+                  className="form-control"
+                  name="description"
+                />
+              </fieldset>
+              <fieldset className="form-group">
+                <label>Target Date</label>
+                <Field type="date" className="form-control" name="targetDate" />
+              </fieldset>
+              <div>
+                <button className="btn btn-success m-5 " type="submit">
+                  Save
+                </button>
+              </div>
+            </Form>
+          )}
+        </Formik>
+      </div>
+    </div>
+  );
 }
 
-export default TodoComponent
+export default TodoComponent;
