@@ -1,0 +1,32 @@
+version: '3.7'
+services:
+  currency-exchange:
+    image: younghub/05-currency-exchange-service:0.0.1-SNAPSHOP
+    build:
+      context: 05-currency-exchange-service
+      dockerfile: Dockerfile
+    container_name: currency-exchange-con
+    ports:
+      - "8000:8000"
+    restart: always
+    networks:
+      currency-network:
+
+  currency-conversion:
+    image: younghub/05-currency-conversion-service:0.0.1-SNAPSHOP
+    build:
+      context: 05-currency-conversion-service
+      dockerfile: Dockerfile
+    container_name: currency-conversion-con
+    ports:
+      - "8100:8100"
+    restart: always
+    depends_on:
+      - currency-exchange
+    environment:
+      CURRENCY_EXCHANGE_URI: http://currency-exchange:8000
+    networks:
+      currency-network:
+
+networks:
+  currency-network:
