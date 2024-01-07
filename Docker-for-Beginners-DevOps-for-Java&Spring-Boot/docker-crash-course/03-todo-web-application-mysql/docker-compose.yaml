@@ -1,0 +1,42 @@
+version: '3.7'
+services:
+  todo-web-application-mysql:
+    image: younghub/03-todo-web-application-mysql:0.0.1-SNAPSHOT
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: todo-web-application-mysql
+    restart: always
+    environment:
+      RDS_HOSTNAME: mysql
+      RDS_PORT: 3306
+      RDS_DB_NAME: todos
+      RDS_USERNAME: young
+      RDS_PASSWORD: young
+    depends_on:
+      - mysql
+    networks:
+      web-mysql-network:
+
+  mysql:
+    image: mysql:8-oracle
+    ports:
+      - "3306:3306"
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: young
+      MYSQL_PASSWORD: young
+      MYSQL_DATABASE: todos
+#    volumes:
+#      - mysql-database-data-volume:/var/lib/mysql
+    networks:
+      web-mysql-network:
+
+volumes:
+  mysql-database-data-volume:
+networks:
+  web-mysql-network:

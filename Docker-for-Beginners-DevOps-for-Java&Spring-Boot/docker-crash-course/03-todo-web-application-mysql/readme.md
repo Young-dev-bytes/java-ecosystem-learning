@@ -98,7 +98,7 @@ docker container run -p 8080:8080 --link=mysql -e RDS_HOSTNAME=mysql  in28min/to
 Using Custom Network
 
 ```
-docker container run -p 8080:8080 --network=web-application-mysql-network -e RDS_HOSTNAME=mysql  in28min/todo-web-application-mysql:0.0.1-SNAPSHOT
+docker container run -p 8080:8080 --network=web-mysql-network -e RDS_HOSTNAME=mysql younghub/03-todo-web-application-mysql:0.0.1-SNAPSHOT
 ```
 
 ### Playing with custom networks
