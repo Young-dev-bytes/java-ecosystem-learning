@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/05-currency-conversion-service/pom.xml" />
         <option value="$PROJECT_DIR$/05-currency-exchange-service/pom.xml" />
+        <option value="$PROJECT_DIR$/05-netflix-eureka-naming-server/pom.xml" />
       </list>
     </option>
   </component>

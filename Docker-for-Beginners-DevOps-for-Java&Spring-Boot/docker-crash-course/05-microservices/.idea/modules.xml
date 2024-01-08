@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/05-currency-conversion-service/05-currency-conversion-service.iml" filepath="$PROJECT_DIR$/05-currency-conversion-service/05-currency-conversion-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/05-currency-exchange-service/05-currency-exchange-service.iml" filepath="$PROJECT_DIR$/05-currency-exchange-service/05-currency-exchange-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/05-microservices.iml" filepath="$PROJECT_DIR$/.idea/05-microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-netflix-eureka-naming-server/05-netflix-eureka-naming-server.iml" filepath="$PROJECT_DIR$/05-netflix-eureka-naming-server/05-netflix-eureka-naming-server.iml" />
     </modules>
   </component>
 </project>

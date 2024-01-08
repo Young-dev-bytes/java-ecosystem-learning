@@ -8,17 +8,20 @@
         <outputRelativeToContentRoot value="true" />
         <module name="05-currency-exchange-service" />
         <module name="05-currency-conversion-service" />
+        <module name="05-netflix-eureka-naming-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="05-currency-conversion-service" target="17" />
       <module name="05-currency-exchange-service" target="17" />
+      <module name="05-netflix-eureka-naming-server" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="05-currency-conversion-service" options="-parameters" />
       <module name="05-currency-exchange-service" options="-parameters" />
+      <module name="05-netflix-eureka-naming-server" options="-parameters" />
     </option>
   </component>
 </project>
