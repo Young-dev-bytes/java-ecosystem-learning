@@ -1,14 +1,15 @@
-package com.in28minutes.microservices.currencyexchangeservice;
+package com.in28minutes.microservices.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+
 @SpringBootApplication
 @EnableDiscoveryClient
-public class CurrencyExchangeServiceApplicationH2 {
+public class ApiGatewayServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CurrencyExchangeServiceApplicationH2.class, args);
+		SpringApplication.run(ApiGatewayServerApplication.class, args);
 	}
 }

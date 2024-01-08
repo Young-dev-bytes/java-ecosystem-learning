@@ -1,0 +1,1 @@
+docker run -p 8761:8761 --network=common-network --name=naming-server younghub/05-netflix-eureka-naming-server:0.0.1-SNAPSHOT

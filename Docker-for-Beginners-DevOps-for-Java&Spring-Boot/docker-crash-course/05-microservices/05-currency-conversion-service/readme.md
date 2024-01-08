@@ -1,6 +1,12 @@
 # Currency Conversion Micro Service
 Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplication as a Java Application.
 
+## build docker image:
+docker build -t younghub/05-currency-conversion-service:0.0.1-SNAPSHOP ./
+
+## run docker container:
+docker run -p 8100:8100 --network=common-network --env CURRENCY_EXCHANGE_URI=http://currency-exchange:8000 --env eureka.client.service-url.defaultZone=http://naming-server:8761/eureka/ younghub/05-currency-conversion-service:0.0.1-SNAPSHOP
+
 ## Resources
 
 - http://localhost:8100/currency-converter/from/EUR/to/INR/quantity/10

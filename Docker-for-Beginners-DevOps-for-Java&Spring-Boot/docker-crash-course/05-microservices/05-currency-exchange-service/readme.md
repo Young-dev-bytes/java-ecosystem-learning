@@ -2,6 +2,15 @@
 
 Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplicationH2 as a Java Application.
 
+## build docker image:
+docker build -t younghub/05-currency-exchange-service:0.0.1-SNAPSHOP ./
+
+## run docker container:
+  - not work:
+docker run -p 8000:8000 --network=common-network --name=currency-exchange --env EUREKA.CLIENT.SERVICEURL.DEFAULTZONE=http://naming-server:8761/eureka/ younghub/05-currency-exchange-service:0.0.1-SNAPSHOP
+  - work
+docker run -p 8000:8000 --network=common-network --name=currency-exchange --env eureka.client.service-url.defaultZone=http://naming-server:8761/eureka/ younghub/05-currency-exchange-service:0.0.1-SNAPSHOP
+
 ## Resources
 
 - http://localhost:8000/currency-exchange/from/USD/to/INR

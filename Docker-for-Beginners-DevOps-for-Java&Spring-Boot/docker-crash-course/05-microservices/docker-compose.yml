@@ -1,5 +1,34 @@
 version: '3.7'
 services:
+
+  api-gateway:
+    image: younghub/05-api-gateway-server:0.0.1-SNAPSHOP
+    build:
+      context: 05-api-gateway-server
+      dockerfile: Dockerfile
+    container_name: api-gateway-server
+    ports:
+      - "8765:8765"
+    restart: always
+    depends_on:
+      - eureka-server
+    environment:
+      SERVICE_URL_DEFAULT_ZONE: http://eureka-server:8761/eureka
+    networks:
+      currency-network:
+
+  eureka-server:
+    image: younghub/05-netflix-eureka-naming-server:0.0.1-SNAPSHOP
+    build:
+      context: 05-netflix-eureka-naming-server
+      dockerfile: Dockerfile
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    restart: always
+    networks:
+      currency-network:
+
   currency-exchange:
     image: younghub/05-currency-exchange-service:0.0.1-SNAPSHOP
     build:
@@ -9,8 +38,14 @@ services:
     ports:
       - "8000:8000"
     restart: always
+    depends_on:
+      - eureka-server
+    environment:
+      SERVICE_URL_DEFAULT_ZONE: http://eureka-server:8761/eureka
     networks:
       currency-network:
+
+
 
   currency-conversion:
     image: younghub/05-currency-conversion-service:0.0.1-SNAPSHOP
@@ -23,10 +58,16 @@ services:
     restart: always
     depends_on:
       - currency-exchange
+      - eureka-server
     environment:
-      CURRENCY_EXCHANGE_URI: http://currency-exchange:8000
+      #      CURRENCY_EXCHANGE_URI: http://currency-exchange:8000
+      SERVICE_URL_DEFAULT_ZONE: http://eureka-server:8761/eureka
     networks:
       currency-network:
+
+
+
+
 
 networks:
   currency-network:

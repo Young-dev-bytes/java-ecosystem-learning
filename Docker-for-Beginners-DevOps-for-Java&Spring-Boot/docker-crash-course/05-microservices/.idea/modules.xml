@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/05-api-gateway-server/05-api-gateway-server.iml" filepath="$PROJECT_DIR$/05-api-gateway-server/05-api-gateway-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/05-currency-conversion-service/05-currency-conversion-service.iml" filepath="$PROJECT_DIR$/05-currency-conversion-service/05-currency-conversion-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/05-currency-exchange-service/05-currency-exchange-service.iml" filepath="$PROJECT_DIR$/05-currency-exchange-service/05-currency-exchange-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/05-microservices.iml" filepath="$PROJECT_DIR$/.idea/05-microservices.iml" />
