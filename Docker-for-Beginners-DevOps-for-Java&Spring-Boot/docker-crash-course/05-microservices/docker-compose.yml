@@ -12,8 +12,12 @@ services:
     restart: always
     depends_on:
       - eureka-server
+      - rabbitmq
+      - zipkin-server
     environment:
       SERVICE_URL_DEFAULT_ZONE: http://eureka-server:8761/eureka
+      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
+      MANAGEMENT_ZIPKIN_TRACING_ENDPOINT: http://zipkin-server:9411/api/v2/spans
     networks:
       currency-network:
 
@@ -40,8 +44,11 @@ services:
     restart: always
     depends_on:
       - eureka-server
+      - rabbitmq
     environment:
       SERVICE_URL_DEFAULT_ZONE: http://eureka-server:8761/eureka
+      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
+      MANAGEMENT_ZIPKIN_TRACING_ENDPOINT: http://zipkin-server:9411/api/v2/spans
     networks:
       currency-network:
 
@@ -59,9 +66,38 @@ services:
     depends_on:
       - currency-exchange
       - eureka-server
+      - rabbitmq
+      - zipkin-server
     environment:
       #      CURRENCY_EXCHANGE_URI: http://currency-exchange:8000
       SERVICE_URL_DEFAULT_ZONE: http://eureka-server:8761/eureka
+      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
+      MANAGEMENT_ZIPKIN_TRACING_ENDPOINT: http://zipkin-server:9411/api/v2/spans
+    networks:
+      currency-network:
+
+  rabbitmq:
+    image: rabbitmq:3.9.11-management-alpine
+    container_name: rabbitmq
+    mem_limit: 800m
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      currency-network:
+
+  zipkin-server:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    mem_limit: 1g
+    ports:
+      - "9411:9411"
+    environment:
+      STORAGE_TYPE: mem
+      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
+    depends_on:
+      - rabbitmq
+    restart: always
     networks:
       currency-network:
 
