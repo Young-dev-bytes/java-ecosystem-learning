@@ -11,13 +11,13 @@ services:
       - naming-server
       - rabbitmq
     environment:
-      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
-      SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411
+      SERVICE_URL_DEFAULT_ZONE: http://naming-server:8761/eureka
+      SPRING_ZIPKIN_BASEURL: http://zipkin-server:9411
       #      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
       SPRING_RABBITMQ_HOST: rabbitmq
       SPRING_ZIPKIN_SENDER_TYPE: rabbit
-  #    networks:
-  #      - currency-network
+    networks:
+      - currency-network
 
   currency-conversion:
     image: younghub/micro-v3-currency-conversion-service:0.0.1-SNAPSHOT
@@ -43,19 +43,22 @@ services:
       - naming-server
       - rabbitmq
     environment:
-      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
-      SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411
+      SERVICE_URL_DEFAULT_ZONE: http://naming-server:8761/eureka
+      SPRING_ZIPKIN_BASEURL: http://zipkin-server:9411
+      MANAGEMENT_ZIPKIN_TRACING_ENDPOINT: http://zipkin-server:9411/api/v2/spans
       RABBIT_URI: amqp://guest:guest@rabbitmq:5672
       SPRING_RABBITMQ_HOST: rabbitmq
       SPRING_ZIPKIN_SENDER_TYPE: rabbit
+    networks:
+      currency-network:
 
   naming-server:
     image: younghub/micro-v3-netflix-eureka-naming-server:0.0.1-SNAPSHOT
     mem_limit: 1g
     ports:
       - "8761:8761"
-  #    networks:
-  #      - currency-network
+    networks:
+      - currency-network
 
   zipkin-server:
     image: openzipkin/zipkin
@@ -75,6 +78,8 @@ services:
     ports:
       - "5672:5672"
       - "15672:15672"
+    networks:
+      currency-network:
 
-#networks:
-#  currency-network:
+networks:
+  currency-network:
