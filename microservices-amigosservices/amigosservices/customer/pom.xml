@@ -23,7 +23,7 @@
         </plugins>
     </build>
 
-    <!--<profiles>
+    <profiles>
         <profile>
             <id>build-docker-image</id>
             <build>
@@ -35,7 +35,7 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>-->
+    </profiles>
 
     <dependencies>
         <dependency>

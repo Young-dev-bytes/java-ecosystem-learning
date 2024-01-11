@@ -1,0 +1,6 @@
+com/amigoscode/clients/notification/NotificationRequest$NotificationRequestBuilder.class
+com/amigoscode/clients/fraud/FraudClient.class
+com/amigoscode/clients/notification/NotificationRequest.class
+com/amigoscode/clients/fraud/FraudCheckResponse.class
+com/amigoscode/clients/notification/NotificationClient.class
+com/amigoscode/clients/fraud/FraudCheckResponse$FraudCheckResponseBuilder.class

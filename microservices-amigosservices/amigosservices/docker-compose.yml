@@ -1,9 +1,13 @@
+version: '3.7'
+
 services:
+
+  # postgres ####################
   postgres:
     container_name: postgres
     image: postgres
     environment:
-      POSTGRES_USER: amigoscode
+      POSTGRES_USER: younghub
       POSTGRES_PASSWORD: password
       PGDATA: /data/postgres
     volumes:
@@ -13,6 +17,10 @@ services:
     networks:
       - postgres
     restart: unless-stopped
+
+
+
+  # pgadmin ####################
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
@@ -27,6 +35,10 @@ services:
     networks:
       - postgres
     restart: unless-stopped
+
+
+
+  # zipkin ####################
   zipkin:
     image: openzipkin/zipkin
     container_name: zipkin
@@ -42,6 +54,97 @@ services:
       - "15672:15672"
     networks:
       - spring
+
+
+
+  # eureka-server ####################
+  eureka-server:
+    image: younghub/eureka-server:latest
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      spring:
+    depends_on:
+      - zipkin
+
+
+
+  # apigw ####################
+  api-gateway:
+    image: younghub/api-gateway:latest
+    container_name: api-gateway
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+    depends_on:
+      - zipkin
+      - eureka-server
+
+
+
+  # customer ####################
+  customer:
+    image: younghub/customer:latest
+    container_name: customer
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - postgres
+      - rabbitmq
+
+
+
+
+  # fraud ####################
+  fraud:
+    image: younghub/fraud:latest
+    container_name: fraud
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - postgres
+      - rabbitmq
+
+
+
+
+
+  # notification ####################
+  notification:
+    image: younghub/notification:latest
+    container_name: notification
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - postgres
+      - rabbitmq
+
+
+
 
 networks:
   postgres:

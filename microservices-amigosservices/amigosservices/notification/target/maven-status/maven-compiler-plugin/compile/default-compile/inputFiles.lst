@@ -1,0 +1,7 @@
+/Users/share/Documents/studyfolders/back-end/microservices-amigosservices/amigosservices/notification/src/main/java/com/amigoscode/notification/NotificationApplication.java
+/Users/share/Documents/studyfolders/back-end/microservices-amigosservices/amigosservices/notification/src/main/java/com/amigoscode/notification/NotificationConfig.java
+/Users/share/Documents/studyfolders/back-end/microservices-amigosservices/amigosservices/notification/src/main/java/com/amigoscode/notification/NotificationRepository.java
+/Users/share/Documents/studyfolders/back-end/microservices-amigosservices/amigosservices/notification/src/main/java/com/amigoscode/notification/rabbitmq/NotificationConsumer.java
+/Users/share/Documents/studyfolders/back-end/microservices-amigosservices/amigosservices/notification/src/main/java/com/amigoscode/notification/NotificationService.java
+/Users/share/Documents/studyfolders/back-end/microservices-amigosservices/amigosservices/notification/src/main/java/com/amigoscode/notification/NotificationController.java
+/Users/share/Documents/studyfolders/back-end/microservices-amigosservices/amigosservices/notification/src/main/java/com/amigoscode/notification/Notification.java

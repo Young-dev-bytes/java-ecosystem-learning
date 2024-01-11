@@ -1,0 +1,8 @@
+com/amigoscode/notification/NotificationService.class
+com/amigoscode/notification/NotificationRepository.class
+com/amigoscode/notification/NotificationController.class
+com/amigoscode/notification/Notification$NotificationBuilder.class
+com/amigoscode/notification/NotificationConfig.class
+com/amigoscode/notification/rabbitmq/NotificationConsumer.class
+com/amigoscode/notification/Notification.class
+com/amigoscode/notification/NotificationApplication.class

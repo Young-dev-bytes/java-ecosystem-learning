@@ -30,7 +30,7 @@
         <spring.boot.maven.plugin.version>2.5.7</spring.boot.maven.plugin.version>
         <spring.boot.dependencies.version>2.5.7</spring.boot.dependencies.version>
         <spring.cloud-version>2020.0.3</spring.cloud-version>
-        <image>786131/${project.artifactId}:${project.version}</image>
+        <image>younghub/${project.artifactId}:${project.version}</image>
     </properties>
 
     <dependencyManagement>
@@ -89,10 +89,8 @@
                     <version>3.1.4</version>
                     <configuration>
                         <from>
-                            <image>
-                                eclipse-temurin:17@sha256:2b47a8ea946ce1e5365a1562414ed576e378b7b670cadff3fb98ebecf2890cdc
-                            </image>
-                            <platforms>
+                            <image>openjdk:17-jdk-alpine</image>
+                            <!--<platforms>
                                 <platform>
                                     <architecture>arm64</architecture>
                                     <os>linux</os>
@@ -101,7 +99,7 @@
                                     <architecture>amd64</architecture>
                                     <os>linux</os>
                                 </platform>
-                            </platforms>
+                            </platforms>-->
                         </from>
                         <to>
                             <tags>
