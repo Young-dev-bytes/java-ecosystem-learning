@@ -12,8 +12,7 @@ import com.b.simple.design.model.customer.Product;
 public class CustomerBOImpl implements CustomerBO {
 
     @Override
-    public Amount getCustomerProductsSum(List<Product> products)
-            throws DifferentCurrenciesException {
+    public Amount getCustomerProductsSum(List<Product> products) throws DifferentCurrenciesException {
         BigDecimal temp = BigDecimal.ZERO;
 
         if (products.size() == 0)
