@@ -12,15 +12,15 @@ public class MenuItem {
     boolean visible;
     String writeAccessRole;
 
-    public MenuItem(String name ,
-            boolean visible , List<MenuItem> childMenus) {
+    public MenuItem(String name,
+                    boolean visible, List<MenuItem> childMenus) {
         super();
         this.name = name;
         this.visible = visible;
         this.childMenus = childMenus;
     }
 
-    public MenuItem(String name , String readAccessRole , String writeAccessRole) {
+    public MenuItem(String name, String readAccessRole, String writeAccessRole) {
         super();
         this.name = name;
         this.readAccessRole = readAccessRole;
