@@ -1,6 +1,6 @@
 package com.thread.creation.example;
 
-public class Main {
+public class MainDemo {
 
     public static void main(String[] args) {
 

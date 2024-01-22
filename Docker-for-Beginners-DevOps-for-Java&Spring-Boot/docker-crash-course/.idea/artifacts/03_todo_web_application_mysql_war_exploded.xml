@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="03-todo-web-application-mysql:war exploded">
+    <output-path>$PROJECT_DIR$/03-todo-web-application-mysql/target/todo-web-application-mysql</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>03-todo-web-application-mysql</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="03-todo-web-application-mysql" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/03-todo-web-application-mysql/target/todo-web-application-mysql/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="03-todo-web-application-mysql/web/Web" />
+    </root>
+  </artifact>
+</component>

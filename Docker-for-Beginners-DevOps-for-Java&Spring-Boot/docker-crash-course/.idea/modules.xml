@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-hello-world-rest-api/01-hello-world-rest-api.iml" filepath="$PROJECT_DIR$/01-hello-world-rest-api/01-hello-world-rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-spring-boot-react-full-stack-h2/restful-web-services/04-rest-api-full-stack.iml" filepath="$PROJECT_DIR$/04-spring-boot-react-full-stack-h2/restful-web-services/04-rest-api-full-stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/docker-crash-course.iml" filepath="$PROJECT_DIR$/.idea/docker-crash-course.iml" />
+    </modules>
+  </component>
+</project>

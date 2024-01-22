@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="04-rest-api-full-stack" />
+        <module name="01-hello-world-rest-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01-hello-world-rest-api" target="17" />
+      <module name="02-todo-web-application-h2" target="1.5" />
+      <module name="03-todo-web-application-mysql" target="1.5" />
+      <module name="04-rest-api-full-stack" target="1.5" />
+      <module name="05-currency-exchange-service" target="1.5" />
+      <module name="06-currency-conversion-service" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="01-hello-world-rest-api" options="-parameters" />
+    </option>
+  </component>
+</project>

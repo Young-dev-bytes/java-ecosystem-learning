@@ -1,4 +1,4 @@
-package com.thread.creation.example.funcprogramming;
+package com.thread.creation.funcprogramming;
 
 public class FuncDemo {
     public static void main(String[] args) {

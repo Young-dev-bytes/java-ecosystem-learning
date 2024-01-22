@@ -1,0 +1,3 @@
+
+Thread-States
+https://docs.oracle.com/javase/10/docs/api/java/lang/Thread.State.html

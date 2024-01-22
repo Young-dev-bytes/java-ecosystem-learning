@@ -24,7 +24,7 @@ public class MenuAccessTest {
 
         List<MenuItem> menuItems = Arrays.asList(menuItemsArray);
 
-        MenuAccess menuAccess = new MenuAccess();
+        MenuAccess2 menuAccess = new MenuAccess2();
 
         menuAccess.setAuthorizationsInEachMenus(menuItems, userRoles);
 

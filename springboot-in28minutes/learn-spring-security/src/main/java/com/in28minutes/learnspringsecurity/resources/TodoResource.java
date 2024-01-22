@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,7 +26,7 @@ public class TodoResource {
     }
 
     @GetMapping("/users/{username}/todos")
-    public Todo retrieveTodosForSpecificUser(@PathVariable String username) {
+    public Todo retrieveTodosForSpecificUser(@Validated @PathVariable String username) {
 
         return TODOS_LIST.get(0);
     }

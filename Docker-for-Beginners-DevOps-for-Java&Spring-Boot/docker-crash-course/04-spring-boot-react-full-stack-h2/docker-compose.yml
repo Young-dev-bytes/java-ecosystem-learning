@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  todo-frontend:
+    image: younghub/04-todo-app:0.0.1-SNAPSHOT
+    ports:
+      - "3200:80"
+    restart: always
+    depends_on:
+      - todo-backend
+    networks:
+      - fullstack-application-network
+
+  todo-backend:
+    image: younghub/04-todo-restful-api:0.0.1-SNAPSHOT
+    build: 
+      context: 04-todo-restful-api
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - testing-network
+networks:
+  fullstack-application-network:
+  testing-network:

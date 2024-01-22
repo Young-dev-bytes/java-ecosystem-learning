@@ -1,4 +1,4 @@
-package com.thread.creation.example.threadproxy;
+package com.thread.creation.threadproxy;
 
 public class RunnableYoung implements Runnable{
     @Override

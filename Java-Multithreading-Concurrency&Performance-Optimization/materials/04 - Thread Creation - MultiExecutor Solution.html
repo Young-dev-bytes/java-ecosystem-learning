@@ -1,0 +1,30 @@
+<p>In this exercise we are going to implement a&nbsp; <code>MultiExecutor</code> .</p><p>The client of this class will create a list of <code>Runnable</code> tasks and provide that list into <code>MultiExecutor</code>'s constructor.</p><p>When the client runs the . <code>executeAll()</code>,&nbsp; the <code>MultiExecutor</code>,&nbsp; will execute all the given tasks.</p><p>To take full advantage of our multicore CPU, we would like the <code>MultiExecutor</code> to execute all the tasks in parallel, by passing each task to a different thread.</p><p> </p><pre class="prettyprint linenums">import java.util.ArrayList;
+import java.util.List;
+
+public class MultiExecutor {
+    
+    private final List&lt;Runnable&gt; tasks;
+
+    /*
+     * @param tasks to executed concurrently
+     */
+    public MultiExecutor(List&lt;Runnable&gt; tasks) {
+        this.tasks = tasks;
+    }
+
+    /**
+     * Executes all the tasks concurrently
+     */
+    public void executeAll() {
+        List&lt;Thread&gt; threads = new ArrayList&lt;&gt;(tasks.size());
+        
+        for (Runnable task : tasks) {
+            Thread thread = new Thread(task);
+            threads.add(thread);
+        }
+        
+        for(Thread thread : threads) {
+            thread.start();
+        }
+    }
+}</pre>

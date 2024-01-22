@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/functional-programming-with-java.iml" filepath="$PROJECT_DIR$/functional-programming-with-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/functional-programming-with-java-in28minutes.iml" filepath="$PROJECT_DIR$/functional-programming-with-java-in28minutes.iml" />
     </modules>
   </component>
 </project>

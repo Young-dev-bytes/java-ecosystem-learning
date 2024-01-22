@@ -5,105 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f037a9ef-1d0b-42be-a0b3-cc39571d28f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/02_todo_web_application_h2_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/02_todo_web_application_h2_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/02_todo_web_application_h2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/02_todo_web_application_h2_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile-v1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/image-id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/image-name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/repository" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.in28minutes.springboot.web.SpringBootFirstWebApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.in28minutes.springboot.web.SpringBootFirstWebApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/docker/com.in28minutes.springboot.web/02-todo-web-application-h2/image-id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/docker/com.in28minutes.springboot.web/02-todo-web-application-h2/image-name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/docker/com.in28minutes.springboot.web/02-todo-web-application-h2/repository" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/docker/com.in28minutes.springboot.web/02-todo-web-application-h2/tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2.war.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/com/in28minutes/springboot/web/EnvironmentConfigurationLogger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/com/in28minutes/springboot/web/SpringBootFirstWebApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/com/in28minutes/springboot/web/controller/ErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/com/in28minutes/springboot/web/controller/LogoutController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/com/in28minutes/springboot/web/controller/TodoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/com/in28minutes/springboot/web/controller/WelcomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/com/in28minutes/springboot/web/model/Todo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/com/in28minutes/springboot/web/security/SecurityConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/com/in28minutes/springboot/web/service/TodoRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/classes/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/jsp/common/footer.jspf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/jsp/common/header.jspf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/jsp/common/navigation.jspf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/jsp/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/jsp/list-todos.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/jsp/todo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/jsp/welcome.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/HikariCP-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/aspectjweaver-1.9.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/bootstrap-3.3.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/bootstrap-datepicker-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/byte-buddy-1.9.16.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/classmate-1.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/h2-1.4.199.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/hibernate-commons-annotations-5.0.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/hibernate-core-5.3.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/hibernate-validator-6.0.17.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jackson-core-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jackson-databind-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jackson-datatype-jdk8-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jackson-datatype-jsr310-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jackson-module-parameter-names-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/javassist-3.23.2-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/javax.transaction-api-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jquery-1.9.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/jul-to-slf4j-1.7.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/log4j-api-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/log4j-to-slf4j-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/slf4j-api-1.7.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/snakeyaml-1.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-aop-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-aspects-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-beans-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-autoconfigure-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-devtools-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-starter-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-starter-aop-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-starter-data-jpa-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-starter-jdbc-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-starter-json-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-starter-logging-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-starter-security-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-boot-starter-web-2.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-context-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-core-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-data-commons-2.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-data-jpa-2.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-expression-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-jcl-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-jdbc-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-orm-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-security-config-5.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-security-core-5.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-security-web-5.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-tx-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-web-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/spring-webmvc-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-web-application-h2/WEB-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3-docker-k8s/git-localconfig-repo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3-docker-k8s/git-localconfig-repo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3-docker/git-localconfig-repo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3-docker/git-localconfig-repo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3/git-localconfig-repo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3/git-localconfig-repo" afterDir="false" />
@@ -186,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704438192037</updated>
-      <workItem from="1704438193609" duration="7352000" />
+      <workItem from="1704438193609" duration="7723000" />
     </task>
     <servers />
   </component>

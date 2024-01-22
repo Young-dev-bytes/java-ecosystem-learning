@@ -2,6 +2,7 @@ package com.in28minutes.learnspringsecurity.entity;
 
 public class Todo {
 
+
     private String username;
     private String description;
 

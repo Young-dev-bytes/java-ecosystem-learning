@@ -1,0 +1,17 @@
+FROM maven AS backend-build
+
+WORKDIR /fullstack/backend
+
+COPY pom.xml .
+
+RUN mvn dependency:go-offline -B
+
+COPY src src
+RUN mvn package -DskipTests
+
+#RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+
+FROM openjdk:17-jdk-alpine
+WORKDIR /app
+COPY --from=backend-build /fullstack/backend/target/*.jar app.jar
+ENTRYPOINT ["sh","-c","java -jar /app.jar"]
