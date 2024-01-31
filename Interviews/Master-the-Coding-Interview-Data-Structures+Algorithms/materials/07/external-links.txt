@@ -1,0 +1,33 @@
+
+002 MD5
+http://www.miraclesalad.com/webtools/md5.php
+
+003 Hash-Table-Animation
+https://www.cs.usfca.edu/~galles/visualization/OpenHash.html
+
+003 Hash-Tables-Wikipedia
+https://en.wikipedia.org/wiki/Hash_table
+
+004 Hash-Tables-also-called-Associative-Arrays-in-other-languages
+https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(associative_array)
+
+004 Hash-Table-Repl
+https://repl.it/@aneagoie/DataStructures-Hash-Tables
+
+005 Exercise-Hash-Tables-Repl
+https://repl.it/@aneagoie/DataStructures-Hash-Table-exercise
+
+006 Solution-Code
+https://repl.it/@aneagoie/DataStructures-Hash-Table-Implementation-1
+
+007 Solution-Code
+https://repl.it/@aneagoie/DataStructures-Hash-Table-Implementation
+
+010 Find-First-Recurring-Character
+https://repl.it/@aneagoie/firstRecurringCharacter-exercise
+
+011 Solution-Code
+https://repl.it/@aneagoie/firstRecurringCharacter
+
+013 Technical-Interview-Mind-Map
+https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview

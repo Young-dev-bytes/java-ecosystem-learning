@@ -1,0 +1,45 @@
+
+002 Linked-Lists-Repl
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists
+
+004 VisuAlgo-Linked-List
+https://visualgo.net/en/list
+
+007 Exercise-Repl
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists-Implementation-1
+
+008 Solution-Exercise-Code
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists-Implementation-2
+
+009 Solution-Code
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists-Implementation-2-
+
+011 Exercise-Repl
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists-Implementation-3
+
+011 VisuAlgo-Linked-List
+https://visualgo.net/en/list
+
+013 Solution-Code
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists-Implementation-4-
+
+014 Solution-Code
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists-Implementation-4
+
+016 Singly-Linked-List
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists-Implementation-4
+
+017 Solution-Code
+https://repl.it/@aneagoie/Data-Structure-Doubly-Linked-List-Implementation
+
+019 Exercise-Repl
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists-Implementation-5
+
+020 Solution-Code
+https://repl.it/@aneagoie/Data-Structures-Linked-Lists-Implementation
+
+021 Technical-Interview-Mind-Map
+https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview
+
+021 My-Favourite-Video-Comparing-Linked-Lists-to-Arrays
+https://www.youtube.com/watch?v=DyG9S9nAlUM

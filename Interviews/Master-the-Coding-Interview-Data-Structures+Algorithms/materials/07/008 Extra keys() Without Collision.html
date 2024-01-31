@@ -1,0 +1,22 @@
+<p>One of our ZTM students with a great Discord username, <strong>mightypickachu</strong>, decided to enhance the previous <code>keys()</code> method to also include hash collision prevention. Here is how to do it (or you can try it yourself):</p><pre class="prettyprint linenums"> keys() {
+    if (!this.data.length) {
+      return undefined
+    }
+    let result = []
+    // loop through all the elements
+    for (let i = 0; i &lt; this.data.length; i++) {
+        // if it's not an empty memory cell
+        if (this.data[i] &amp;&amp; this.data[i].length) {
+          // but also loop through all the potential collisions
+          if (this.data.length &gt; 1) {
+            for (let j = 0; j &lt; this.data[i].length; j++) {
+              result.push(this.data[i][j][0])
+            }
+          } else {
+            result.push(this.data[i][0])
+          } 
+        }
+    }
+    return result; 
+  }
+</pre>
