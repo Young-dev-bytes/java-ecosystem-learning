@@ -1,0 +1,39 @@
+
+001 Technical-Interview-Mind-Map
+https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview
+
+004 Binary-Search-Tree-VisuAlgo
+https://visualgo.net/bn/bst
+
+005 Big-O-Cheat-Sheet
+http://bigocheatsheet.com
+
+007 Exercise-Repl
+https://repl.it/@aneagoie/Data-Structures-Trees-exercise
+
+008 Solution-Code
+https://repl.it/@aneagoie/Data-Structures-Trees-exercise-2
+
+009 Solution-Code
+https://repl.it/@aneagoie/Data-Structures-Trees-exercise-3
+
+010 Exercise-Repl
+https://repl.it/@aneagoie/Data-Structures-Trees-exercise-3
+
+010 Binary-Search-Tree-VisuAlgo
+https://visualgo.net/en/bst
+
+011 Solution-Code
+https://repl.it/@aneagoie/Data-Structures-Trees
+
+014 VisuAlgo-Binary-Heap
+https://visualgo.net/en/heap
+
+015 A-great-explanation-of-why
+https://stackoverflow.com/questions/1699057/why-are-two-different-concepts-both-called-heap
+
+016 Priority-Queue-Javascript-Code
+https://www.geeksforgeeks.org/implementation-priority-queue-javascript/
+
+018 Technical-Interview-Mind-Map
+https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview

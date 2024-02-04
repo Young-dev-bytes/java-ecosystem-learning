@@ -1,9 +1,11 @@
-package com.problems;
+package com.solves;
 
-public class SubstituteTeacher extends Teacher{
-    @Override
-    public void teach() {
+public class SubstituteTeacher extends SchoolStaff {
+
+    /*public void teach() {
         // do nothing...
         // throw new CannotTeachException("cannot teach...");
-    }
+    }*/
+
+
 }

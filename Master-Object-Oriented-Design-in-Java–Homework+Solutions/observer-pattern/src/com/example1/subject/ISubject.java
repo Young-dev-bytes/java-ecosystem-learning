@@ -1,6 +1,6 @@
-package com.before.subject;
+package com.example1.subject;
 
-import com.before.observers.IObserver;
+import com.example1.observers.IObserver;
 
 interface ISubject {
 

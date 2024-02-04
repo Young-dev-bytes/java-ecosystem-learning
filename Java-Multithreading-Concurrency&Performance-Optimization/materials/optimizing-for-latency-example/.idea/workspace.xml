@@ -1,41 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="022a6e71-b697-43d1-abe4-9ea9c174546c" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="022a6e71-b697-43d1-abe4-9ea9c174546c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/Java-Multithreading-Concurrency&amp;Performance-Optimization.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-threading-fundamentals-thread-creation/01-threading-fundamentals-thread-creation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../02-threading-fundamentals-thread-coordination/02-threading-fundamentals-thread-coordination.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../02-threading-fundamentals-thread-coordination/src/com/DemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../02-threading-fundamentals-thread-coordination/src/com/thread/Main01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../02-threading-fundamentals-thread-coordination/src/com/thread/Main02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../02-threading-fundamentals-thread-coordination/src/com/thread/join/DemoApp01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03-performance-optimization/03-performance-optimization.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03-performance-optimization/src/com/latency/DemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../joining-threads-example/joining-threads-example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread-termination-example/thread-termination-example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/builder-pattern/builder-pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/builder-pattern/src/com/DemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/builder-pattern/src/com/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/builder-pattern/src/com/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/dependency-injection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/problems/DemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/problems/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/problems/LargeEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/problems/SmallEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/problems/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/solves/DemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/solves/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/solves/LargeEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/solves/SmallEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/dependency-injection/src/com/solves/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/interface-segregation-principle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/problems/AccountsReceivable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/problems/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/problems/CustomerTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/problems/DemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/problems/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/problems/ReportGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/solves/Accounting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/solves/AccountsReceivable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/solves/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/solves/CustomerTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/solves/DemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/solves/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/solves/ReportGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/interface-segregation-principle/src/com/solves/Reporting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/liskov-substitution-principle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/problems/CannotTeachException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/problems/EnglishTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/problems/MathTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/problems/ScienceTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/problems/SubstituteTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/problems/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/solves/CannotTeachException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/solves/CourseInstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/solves/EnglishTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/solves/MathTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/solves/SchoolStaff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/solves/ScienceTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/liskov-substitution-principle/src/com/solves/SubstituteTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/materials/code/Lecture 24 Dependency Injection with Spring/.idea/Lecture 24 Dependency Injection with Spring.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/observer-pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example1/DemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example1/domain/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example1/domain/EmployeeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example1/observers/HRDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example1/observers/IObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example1/observers/ITDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example1/observers/PayrollDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example1/subject/EmployeeManagementSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example1/subject/ISubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example2/client/CoffeeShop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example2/coffeeshop/CoffeeAttendent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example2/customers/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/observer-pattern/src/com/example2/customers/WaitingCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/java-multithreading-concurrency.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example/MainDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example/MainDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example/MainTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example/RunnableJack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example/ThreadJack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example2/Main$AscendingHackerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example2/Main$DescendingHackerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example2/Main$HackerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example2/Main$PoliceThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example2/Main$Vault.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/example2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/funcprogramming/Func.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/funcprogramming/FuncDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/funcprogramming/FuncTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/threadproxy/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/threadproxy/RunnableYoung.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/threadproxy/ThreadProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/out/production/java-multithreading-concurrency/com/thread/creation/threadproxy/ThreadYoung.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/example/MainDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/example/MainTwo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/example2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/funcprogramming/Func.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/funcprogramming/FuncDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/funcprogramming/FuncTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/threadproxy/Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/threadproxy/RunnableYoung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/threadproxy/ThreadProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-multithreading-concurrency/src/com/thread/creation/threadproxy/ThreadYoung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimizing-for-latency-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/optimizing-for-latency-example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads-creation-part1/threads-creation-part1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../threads-creation-part1/threads-creation-part1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/Lecture 12 (Singleton Responsibility).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/src/clients/ClientModule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/src/database/DatabaseConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/src/domain/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/src/domain/dao/EmployeeDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/src/reporting/EmployeeReportFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/src/reporting/FormatType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 12 (Singleton Responsibility)/src/reporting/ReportFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/Lecture 13 (Open Closed Homework).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/src/devices/Device.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/src/devices/Projector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/src/devices/SurroundSoundSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/src/devices/TV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/src/remotes/RemoteControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Master-Object-Oriented-Design-in-Java–Homework+Solutions/resources/Lecture 13 (Open Closed Homework)/src/user/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3-docker-k8s/git-localconfig-repo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3-docker-k8s/git-localconfig-repo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3-docker/git-localconfig-repo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3-docker/git-localconfig-repo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3/git-localconfig-repo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../microservices-in28minutes/microservice-v3/git-localconfig-repo" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,6 +161,8 @@
     <option name="width" value="1600" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectId" id="2bNqxGxRuIU3nZqWIUy22s2ZR9P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -75,8 +188,17 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551558858640" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -85,22 +207,21 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="optimizing-for-latency-example" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,6 +232,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -121,6 +243,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551558669065</updated>
+      <workItem from="1706066131446" duration="2564000" />
     </task>
     <servers />
   </component>
@@ -155,6 +278,9 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">

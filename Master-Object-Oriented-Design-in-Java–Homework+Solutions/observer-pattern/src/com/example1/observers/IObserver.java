@@ -1,7 +1,7 @@
-package com.before.observers;
+package com.example1.observers;
 
 
-import com.before.domain.Employee;
+import com.example1.domain.Employee;
 
 /**
  * This interface defines the method that the subject will call when it

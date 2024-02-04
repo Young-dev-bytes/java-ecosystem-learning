@@ -1,24 +1,19 @@
-package com.solves;
+package com.problems;
 
 public class AccountsReceivable {
 
-    // private CustomerTransaction customerTransaction;
-    private Accounting customerTransaction;
+    private final CustomerTransaction customerObject;
 
-    /*public AccountsReceivable(CustomerTransaction customerTransaction) {
-        this.customerTransaction = customerTransaction;
-    }*/
-
-    public AccountsReceivable(Accounting customerTransaction) {
-        this.customerTransaction = customerTransaction;
+    public AccountsReceivable(CustomerTransaction customerObject) {
+        this.customerObject = customerObject;
     }
 
     public void postPayment() {
-        customerTransaction.chargeCustomer();
+        customerObject.chargeCustomer();
     }
 
     public void sendInvoice() {
-        customerTransaction.prepareInvoice();
+        customerObject.prepareInvoice();
         // send the invoice
     }
 }

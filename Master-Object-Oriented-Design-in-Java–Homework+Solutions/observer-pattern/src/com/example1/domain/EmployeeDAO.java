@@ -1,4 +1,4 @@
-package com.before.domain;
+package com.example1.domain;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,2 +1,5 @@
-package com.solves;public interface CourseInstructor {
+package com.solves;
+
+public interface CourseInstructor {
+    public void teach();
 }

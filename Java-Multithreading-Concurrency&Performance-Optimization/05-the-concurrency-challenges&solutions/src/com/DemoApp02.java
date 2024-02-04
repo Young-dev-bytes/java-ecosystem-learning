@@ -1,15 +1,11 @@
 package com;
 
-public class DemoApp {
+public class DemoApp02 {
     public static void main(String[] args) throws InterruptedException {
 
-        // InventoryCounter inventoryCounter = new InventoryCounter();
-        // IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
-        // DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
-
-        IncrementingThread incrementingThread = new IncrementingThread(new InventoryCounter());
-        DecrementingThread decrementingThread = new DecrementingThread(new InventoryCounter());
-
+        InventoryCounter inventoryCounter = new InventoryCounter();
+        IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
+        DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
 
         incrementingThread.start();
         decrementingThread.start();
@@ -17,7 +13,7 @@ public class DemoApp {
         incrementingThread.join();
         decrementingThread.join();
 
-        // System.out.println("We currently have " + inventoryCounter.getItems() + " items.");
+        System.out.println("We currently have " + inventoryCounter.getItems() + " items.");
 
     }
 
@@ -32,7 +28,7 @@ public class DemoApp {
 
         @Override
         public void run() {
-            for (int i = 0; i < 1000; i++) {
+            for (int i = 0; i < 10000; i++) {
                 inventoryCounter.decrement();
                 System.out.println("decrement: " + inventoryCounter.getItems());
             }
@@ -49,7 +45,7 @@ public class DemoApp {
 
         @Override
         public void run() {
-            for (int i = 0; i < 1000; i++) {
+            for (int i = 0; i < 10000; i++) {
                 inventoryCounter.increment();
                 System.out.println("increment: " + inventoryCounter.getItems());
             }
@@ -58,24 +54,30 @@ public class DemoApp {
 
     private static class InventoryCounter {
 
-
+        Object lockingObject = new Object();
         private int items = 0;
 
-        public synchronized void increment() {
-            System.out.println(Thread.currentThread().getName());
-            items++;
+        public void increment() {
+            synchronized (this.lockingObject) {
+                items++;
+            }
         }
 
-        public synchronized void decrement() {
-            System.out.println(Thread.currentThread().getName());
-
-            items--;
+        public void decrement() {
+            synchronized (this.lockingObject) {
+                items--;
+            }
         }
 
-        public synchronized int getItems() {
-            System.out.println(Thread.currentThread().getName());
-            return items;
+        public int getItems() {
+            synchronized (this.lockingObject) {
+                return items;
+            }
         }
 
     }
+}
+
+class Dog {
+
 }

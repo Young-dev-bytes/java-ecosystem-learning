@@ -1,11 +1,11 @@
-package com.before;
+package com.example1;
 
-import com.before.domain.Employee;
-import com.before.observers.HRDepartment;
-import com.before.observers.IObserver;
-import com.before.observers.ITDepartment;
-import com.before.observers.PayrollDepartment;
-import com.before.subject.EmployeeManagementSystem;
+import com.example1.domain.Employee;
+import com.example1.observers.HRDepartment;
+import com.example1.observers.IObserver;
+import com.example1.observers.ITDepartment;
+import com.example1.observers.PayrollDepartment;
+import com.example1.subject.EmployeeManagementSystem;
 
 import java.util.Date;
 

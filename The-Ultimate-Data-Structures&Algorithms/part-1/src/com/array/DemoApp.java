@@ -1,4 +1,4 @@
-package com;
+package com.array;
 
 
 public class DemoApp {
@@ -20,4 +20,6 @@ public class DemoApp {
 
 
     }
+
+
 }

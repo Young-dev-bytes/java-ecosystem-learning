@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-threading-fundamentals-thread-creation/01-threading-fundamentals-thread-creation.iml" filepath="$PROJECT_DIR$/01-threading-fundamentals-thread-creation/01-threading-fundamentals-thread-creation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-threading-fundamentals-thread-coordination/02-threading-fundamentals-thread-coordination.iml" filepath="$PROJECT_DIR$/02-threading-fundamentals-thread-coordination/02-threading-fundamentals-thread-coordination.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-performance-optimization/03-performance-optimization.iml" filepath="$PROJECT_DIR$/03-performance-optimization/03-performance-optimization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-data-sharing-between-threads/04-data-sharing-between-threads.iml" filepath="$PROJECT_DIR$/04-data-sharing-between-threads/04-data-sharing-between-threads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-the-concurrency-challenges&amp;solutions/05-the-concurrency-challenges&amp;solutions.iml" filepath="$PROJECT_DIR$/05-the-concurrency-challenges&amp;solutions/05-the-concurrency-challenges&amp;solutions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-Multithreading-Concurrency&amp;Performance-Optimization.iml" filepath="$PROJECT_DIR$/.idea/Java-Multithreading-Concurrency&amp;Performance-Optimization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materials/optimizing-for-latency-example/optimizing-for-latency-example.iml" filepath="$PROJECT_DIR$/materials/optimizing-for-latency-example/optimizing-for-latency-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materials/threads-creation-part1/threads-creation-part1.iml" filepath="$PROJECT_DIR$/materials/threads-creation-part1/threads-creation-part1.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,6 +1,6 @@
-package com;
+package com.problems;
 
-public class LargeEngine implements Engine{
+public class LargeEngine implements Engine {
 
     private int horsePower;
 

@@ -1,4 +1,4 @@
-package com;
+package com.latency;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -10,8 +10,8 @@ import java.util.List;
 public class DemoApp {
 
     // /Users/share/Documents/studyfolders/back-end/Java-Multithreading-Concurrency&Performance-Optimization/03-performance-optimization/imgs
-    public static final String SOURCE_FILE = "./03-performance-optimization/imgs/many-flowers.jpg";
-    public static final String DESTINATION_FILE = "./03-performance-optimization/imgs-out/many-flowers-out.jpg";
+    public static final String SOURCE_FILE = "./03-performance-optimization/resources/many-flowers.jpg";
+    public static final String DESTINATION_FILE = "./03-performance-optimization/resources-out/many-flowers-out.jpg";
 
 
     public static void main(String[] args) throws IOException {

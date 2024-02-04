@@ -1,4 +1,4 @@
-package com.solves;
+package com.problems;
 
 public class Customer {
 

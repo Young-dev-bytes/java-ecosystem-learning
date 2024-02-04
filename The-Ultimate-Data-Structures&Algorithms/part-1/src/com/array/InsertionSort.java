@@ -1,30 +1,45 @@
 package com.array;
 
-import java.util.Arrays;
+// Java program for implementation of Insertion Sort
 
-public class Main {
+public class InsertionSort {
 
-    public static void main(String[] args) {
-        int[] array = {38, 65, 97, 76, 13, 27, 49};
-        insertSort(array);
-        System.out.println(Arrays.toString(array));
-    }
+    /*Function to sort array using insertion sort*/
 
-    public static void insertSort(int[] array) {
-
-        for (int i = 0; i < array.length; i++) {
-            int tmp = array[i];
+    public void sort(int[] arr) {
+        int n = arr.length;
+        for (int i = 1; i < n; ++i) {
+            int key = arr[i];
             int j = i - 1;
-            for (; j >= 0; j--) {
-                if (array[j] > tmp) {
-                    array[j + 1] = array[j];
-                } else {
-                    // array[j+1]=tmp;
-                    break;
-                }
-            }
-            array[j + 1] = tmp;
-        }
 
+			/* Move elements of arr[0..i-1], that are greater than key,
+			to one position ahead of their current position */
+            while (j >= 0 && arr[j] > key) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
     }
-}
+
+    /* A utility function to print array of size n*/
+    public static void printArray(int[] arr) {
+        int n = arr.length;
+        for (int j : arr) System.out.print(j + " ");
+
+        System.out.println();
+    }
+
+    // Driver method
+    public static void main(String[] args) {
+        int[] arr = {12, 11, 13, 5, 6};
+
+        InsertionSort ob = new InsertionSort();
+        ob.sort(arr);
+
+        printArray(arr);
+    }
+};
+
+
+/* This code is contributed by Rajat Mishra. */

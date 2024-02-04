@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="materials">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/materials/03 - thread-creation-part2-example.zip!/" />
+      <root url="jar://$PROJECT_DIR$/materials/02 - optimizing-for-latency-example.zip!/" />
+      <root url="jar://$PROJECT_DIR$/materials/05 - optimizing-for-throughput-example.zip!/" />
+      <root url="jar://$PROJECT_DIR$/materials/02 - threads-creation-part1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

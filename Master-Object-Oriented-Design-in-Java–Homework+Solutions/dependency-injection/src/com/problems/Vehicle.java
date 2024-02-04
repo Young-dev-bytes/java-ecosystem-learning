@@ -1,4 +1,4 @@
-package com;
+package com.problems;
 
 public class Vehicle {
 

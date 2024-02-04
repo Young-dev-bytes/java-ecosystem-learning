@@ -44,6 +44,8 @@ public class Main {
 
         long startTime = System.currentTimeMillis();
         //recolorSingleThreaded(originalImage, resultImage);
+
+
         int numberOfThreads = 1;
         recolorMultithreaded(originalImage, resultImage, numberOfThreads);
         long endTime = System.currentTimeMillis();
@@ -59,7 +61,7 @@ public class Main {
     public static void recolorMultithreaded(BufferedImage originalImage, BufferedImage resultImage, int numberOfThreads) {
         List<Thread> threads = new ArrayList<>();
         int width = originalImage.getWidth();
-        int height = originalImage.getHeight() / numberOfThreads;
+        int height = originalImage.getHeight() / numberOfThreads; //2
 
         for(int i = 0; i < numberOfThreads ; i++) {
             final int threadMultiplier = i;

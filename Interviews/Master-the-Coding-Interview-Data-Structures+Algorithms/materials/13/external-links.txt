@@ -1,0 +1,57 @@
+
+002 MDN-sort-
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+
+002 localeCompare-
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare
+
+003 Technical-Interview-Mind-Map
+https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link
+
+003 Toptal-Sorting-Algorithm-Animations
+https://www.toptal.com/developers/sorting-algorithms
+
+004 Big-O-Cheat-Sheet
+http://bigocheatsheet.com/
+
+005 Exercise-Repl
+https://repl.it/@aneagoie/bubbleSort-exercise
+
+006 Solution-Code
+https://repl.it/@aneagoie/bubbleSort
+
+008 Exercise-Repl
+https://repl.it/@aneagoie/selectionSort-exercise
+
+009 Solution-Code
+https://repl.it/@aneagoie/selectionSort
+
+010 Dancing-Algorithms
+https://www.youtube.com/user/AlgoRythmics/videos
+
+012 Exercise-Repl
+https://repl.it/@aneagoie/insertionSort-exercise
+
+013 Solution-Code
+https://repl.it/@aneagoie/insertionSort
+
+015 Exercise-Repl
+https://repl.it/@aneagoie/mergeSort-exercise
+
+016 Solution-Code
+https://repl.it/@aneagoie/mergeSort
+
+019 Exercise-Repl
+https://repl.it/@aneagoie/quickSort-exercise
+
+019 Solution-Code
+https://repl.it/@aneagoie/quickSort
+
+024 Sorting-Interview
+https://repl.it/@aneagoie/sorting-exercise
+
+025 Solution
+https://repl.it/@aneagoie/sorting-exercise-solution
+
+027 Technical-Interview-Mind-Map
+https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link

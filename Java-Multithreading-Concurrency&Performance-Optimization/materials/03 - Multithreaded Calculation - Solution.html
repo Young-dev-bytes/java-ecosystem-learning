@@ -1,0 +1,51 @@
+<p>In this coding exercise we will you all the knowledge from the previous lectures. <br>Before taking the exercise make sure you review the following topics in particular:<br>1. Thread Creation - how to create and start a thread using the <code>Thread</code> class and the <code>start()</code> method.</p><p>2. Thread Join - how to wait for another thread using the <code>Thread.join()</code> method.</p><p><br></p><p>In this exercise we will efficiently calculate the following <code>result = base1 ^ power1 +&nbsp;base2 ^ power2</code></p><p>Where <code>a^b</code> means: <em>a</em> raised to the power of <em>b. </em></p><p>For example <code>10^2 = 100</code></p><p>We know that raising a number to a power is a complex computation, so we we like to execute:</p><p><code>result1 = x1 ^ y1</code></p><p><code>result2 = x2 ^ y2</code></p><p>In parallel.</p><p>and combine the result in the end : <code>result = result1 +&nbsp;result2</code></p><p>This way we can speed up the entire calculation.</p><p><br></p><p><strong>Note :</strong></p><p><code>base1 &gt;= 0, base2 &gt;= 0, power1 &gt;= 0, power2 &gt;= 0</code></p><p><br></p><pre class="prettyprint linenums">import java.math.BigInteger;
+
+public class ComplexCalculation {
+    public BigInteger calculateResult(BigInteger base1, 
+                                      BigInteger power1, 
+                                      BigInteger base2, 
+                                      BigInteger power2) {
+        BigInteger result;
+        PowerCalculatingThread thread1 = new PowerCalculatingThread(base1, power1);
+        PowerCalculatingThread thread2 = new PowerCalculatingThread(base2, power2);
+
+        thread1.start();
+        thread2.start();
+
+        try {
+            thread1.join();
+            thread2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        result = thread1.getResult().add(thread2.getResult());
+        return result;
+    }
+
+    private static class PowerCalculatingThread extends Thread {
+        private BigInteger result = BigInteger.ONE;
+        private BigInteger base;
+        private BigInteger power;
+
+        public PowerCalculatingThread(BigInteger base, BigInteger power) {
+            this.base = base;
+            this.power = power;
+        }
+
+        @Override
+        public void run() {
+            result = BigInteger.ONE;
+
+            for(BigInteger i = BigInteger.ZERO;
+                i.compareTo(power) !=0;
+                i = i.add(BigInteger.ONE)) {
+                result = result.multiply(base);
+            }
+        }
+
+        public BigInteger getResult() {
+            return result;
+        }
+    }
+}</pre>

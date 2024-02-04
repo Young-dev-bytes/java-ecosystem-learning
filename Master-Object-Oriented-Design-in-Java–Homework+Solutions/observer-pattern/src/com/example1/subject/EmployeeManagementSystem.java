@@ -1,8 +1,8 @@
-package com.before.subject;
+package com.example1.subject;
 
-import com.before.domain.Employee;
-import com.before.domain.EmployeeDAO;
-import com.before.observers.IObserver;
+import com.example1.domain.Employee;
+import com.example1.domain.EmployeeDAO;
+import com.example1.observers.IObserver;
 
 import java.util.ArrayList;
 import java.util.List;
