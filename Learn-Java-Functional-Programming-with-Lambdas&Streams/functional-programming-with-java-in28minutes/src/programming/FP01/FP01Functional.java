@@ -47,7 +47,7 @@ public class FP01Functional {
     public static void main(String[] args) {
 
         List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
-        // printAllNumbersInListFunctional(numbers);
+        printAllNumbersInListFunctional(numbers);
         // printEvenNumbersInListFunctional(numbers);
         printSquaresNumbersInListFunctional(numbers);
     }
@@ -62,8 +62,8 @@ public class FP01Functional {
 
     private static void printAllNumbersInListFunctional(List<Integer> numbers) {
 
-        // numbers.stream().forEach(a -> FP01Functional.printT(a));
-        // numbers.stream().forEach(new FP01Functional()::printT); printT is not a static method
+        numbers.stream().forEach(a -> FP01Functional.printT(a));
+        // numbers.stream().forEach(new FP01Functional()::printT); //printT is not a static method
         // numbers.stream().forEach(FP01Functional::printT);
         numbers.stream().forEach(System.out::println);
     }

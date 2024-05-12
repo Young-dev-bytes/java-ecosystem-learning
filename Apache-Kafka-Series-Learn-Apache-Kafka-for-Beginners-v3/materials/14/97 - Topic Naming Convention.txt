@@ -1,0 +1,1 @@
+https://cnr.sh/essays/how-paint-bike-shed-kafka-topic-naming-conventions

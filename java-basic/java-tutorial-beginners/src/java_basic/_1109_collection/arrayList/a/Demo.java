@@ -1,7 +1,9 @@
 package java_basic._1109_collection.arrayList.a;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * @author Young.
@@ -13,23 +15,29 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        ArrayList<String> data = new ArrayList<>();
+        List<String> data = new ArrayList<>();
         data.add("New Delhi");
         data.add("New York");
+        data.add("Mumbai");
+        data.add("London");
+        data.add("New Delhi");
+        data.add("New York");
+        data.add("Mumbai");
+        data.add("London");
+        data.add("New Delhi");
+        data.add("New York");
+        data.add("Mumbai");
+        //long time no see , I want to talk with you , but you are my best friend, Are you ok?
+
+        //        data.add("London");
         System.out.println(data.toString());
-//        System.out.println(data.get(3));
-//        data.add("Mumbai");
-//        data.add("London");
-//        data.add("New Delhi");
-//        data.add("New York");
-//        data.add("Mumbai");
-//        data.add("London");
-//        data.add("New Delhi");
-//        data.add("New York");
-//        data.add("Mumbai");
-//        data.add("London");
 
 
+        HashMap<String, String> map = new HashMap<>();
+        map.put("ee","ww");
+        // Stack
+
+        // Queue
 
         data.forEach(item -> {
             System.out.println(item);
@@ -50,6 +58,4 @@ public class Demo {
     }
 }
 
-class DogT{
 
-}

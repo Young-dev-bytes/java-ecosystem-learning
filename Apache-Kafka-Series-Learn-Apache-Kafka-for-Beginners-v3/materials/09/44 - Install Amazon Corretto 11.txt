@@ -1,0 +1,1 @@
+https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/what-is-corretto-11.html

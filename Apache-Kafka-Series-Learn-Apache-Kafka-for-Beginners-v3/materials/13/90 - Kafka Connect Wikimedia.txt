@@ -1,0 +1,1 @@
+https://github.com/conduktor/kafka-connect-wikimedia

@@ -17,8 +17,7 @@ public class MainT {
         // HashMap hashMap = new HashMap();
 
 
-        Map hashMap = new HashMap();
-
+        HashMap hashMap = new HashMap();
         hashMap.put("o-1", "Young");
         hashMap.put("o-2", "Chen");
         hashMap.put("o-3", "YoungT");

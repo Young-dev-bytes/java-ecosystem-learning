@@ -1,0 +1,1 @@
+https://blog.cloudflare.com/squeezing-the-firehose/

@@ -1,0 +1,1 @@
+https://www.conduktor.io/kafka/advanced-kafka-consumer-with-java

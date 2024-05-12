@@ -6,18 +6,18 @@ public class FP01Exercises {
     public static void main(String[] args) {
         List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
         List<String> courses = List.of("Spring", "Spring Boot", "API", "Microservices", "AWS", "PCF", "Azure", "Docker", "Kubernetes");
-        // printOddNumbersInListFunctional(numbers);
+        printOddNumbersInListFunctional(numbers);
         // printAllCoursesIndividually(courses);
         // printCoursesContainSpring(courses);
         // printCoursesAtleast4Letters(courses);
         // printCubesOfOddNumbers(numbers);
-        printNumsAndNameInEachCourse(courses);
+        // printNumsAndNameInEachCourse(courses);
     }
 
 
     private static void printOddNumbersInListFunctional(List<Integer> numbers) {
-        /*numbers.stream()
-                .forEach(FP01Exercises::printOdd);*/
+        numbers.stream()
+                .forEach(FP01Exercises::printOdd);
 
         /*numbers.stream()
                 .filter(FP01Exercises::isOdd)

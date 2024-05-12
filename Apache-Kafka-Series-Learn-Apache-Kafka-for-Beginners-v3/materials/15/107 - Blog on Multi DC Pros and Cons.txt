@@ -1,0 +1,1 @@
+https://www.altoros.com/blog/multi-cluster-deployment-options-for-apache-kafka-pros-and-cons/
