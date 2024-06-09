@@ -1,0 +1,33 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: nginx
+  labels: xxx
+  nickname: { { .Values.service.name } }
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      ports:
+        - containerPort: 80
+      volumeMounts:
+        - name: nginx-vol
+          mountPath: /usr/nginx
+    - name: sidebar-container
+      image: sibar
+      command:
+        - /bin/bash
+        - |
+          #! iowiesecsdf
+          http() {
+            local path="${1}"
+            set -- -XGET -s --fail
+            #! ppppp
+            curl -k
+          }
+          http://
+        - >-
+          mysql -h 127.0.0.1 -u root -p$MYSQL_ROOT_PASSWORD -e 'SELECT 1'
+      args:
+        - "-c"
+        - echo hello world
