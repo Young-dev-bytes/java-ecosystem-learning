@@ -1,0 +1,48 @@
+
+001 Day-8-Goal-Click-Run-to-see-the-final-project
+https://replit.com/@appbrewery/caesar-cipher-completed?v=1
+
+002 Fork-the-Day-8-Starting-Repl
+https://repl.it/@appbrewery/day-8-start
+
+003 Day-8-Ending-Code
+https://repl.it/@appbrewery/day-8-end
+
+004 Exercise-1-Paint-Area-Calculator
+https://app.codingrooms.com/management/assignments/364943/overview
+
+005 Primer-on-Prime-Numbers
+https://en.wikipedia.org/wiki/Prime_number
+
+005 Exercise-2-Prime-Numbers
+https://app.codingrooms.com/management/assignments/364946/overview
+
+006 Caesar-Cipher-1-Start
+https://repl.it/@appbrewery/caesar-cipher-1-start
+
+006 Python-List-index-Method
+https://www.w3schools.com/python/ref_list_index.asp
+
+006 Caesar-Cipher-1-End
+https://repl.it/@appbrewery/caesar-cipher-1-end
+
+007 Caesar-Cipher-2-Start
+https://repl.it/@appbrewery/caesar-cipher-2-start
+
+007 Caesar-Cipher-2-End
+https://repl.it/@appbrewery/caesar-cipher-2-end
+
+008 Caesar-Cipher-3-Start
+https://repl.it/@appbrewery/caesar-cipher-3-start
+
+008 Caesar-Cipher-3-End
+https://repl.it/@appbrewery/caesar-cipher-3-end
+
+009 Caesar-Cipher-4-Start
+https://repl.it/@appbrewery/caesar-cipher-4-start
+
+009 Caesar-Cipher-4-End
+https://repl.it/@appbrewery/caesar-cipher-4-end
+
+009 Course-Fixes-Report-an-Issue
+https://forms.gle/fpNEQooYBX25gcG67

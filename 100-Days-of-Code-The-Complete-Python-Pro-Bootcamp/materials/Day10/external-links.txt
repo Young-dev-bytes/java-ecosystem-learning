@@ -1,0 +1,27 @@
+
+001 Day-10-Goal-Click-Run-to-see-the-final-project
+https://replit.com/@appbrewery/calculator-final?v=1
+
+002 Fork-the-Day-10-Starting-Repl
+https://repl.it/@appbrewery/day-10-start
+
+002 How-to-Convert-Strings-to-Title-Case
+https://stackoverflow.com/questions/8347048/how-to-convert-string-to-title-case-in-python
+
+003 Completed-Example-Code-for-Day-10
+https://repl.it/@appbrewery/day-10-end#main.py
+
+004 Exercise-1-Days-in-Month
+https://app.codingrooms.com/management/assignments/365233/overview
+
+006 Starting-Code-for-the-Calculator-on-Repl.it
+https://repl.it/@appbrewery/calculator-start#main.py
+
+007 Debugging-Solution
+https://repl.it/@appbrewery/calculator-debug-solution
+
+009 Solution-Calculator-Completed-Code
+https://repl.it/@appbrewery/calculator-final
+
+009 Course-Fixes-Report-an-Issue
+https://forms.gle/fpNEQooYBX25gcG67
