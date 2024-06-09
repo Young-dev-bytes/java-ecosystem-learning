@@ -1,0 +1,21 @@
+
+001 Try-out-an-online-Blackjack-game
+https://games.washingtonpost.com/games/blackjack/
+
+001 Day-11-Goal-Click-Run-to-see-the-final-project
+https://replit.com/@appbrewery/blackjack-final?v=1
+
+002 Fork-the-Day-11-Starting-Repl
+https://repl.it/@appbrewery/blackjack-start
+
+004 Python-sum-Function
+https://docs.python.org/3/library/functions.html#sum
+
+004 Python-list-methods
+https://developers.google.com/edu/python/lists#list-methods
+
+007 Blackjack-Completed-Code
+https://repl.it/@appbrewery/blackjack-final
+
+007 Course-Fixes-Report-an-Issue
+https://forms.gle/fpNEQooYBX25gcG67

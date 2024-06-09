@@ -1,0 +1,24 @@
+
+001 Fork-the-Day-13-Starting-Repl
+https://repl.it/@appbrewery/day-13-start
+
+006 Debug-your-code-online-with-Python-Tutor
+http://www.pythontutor.com/visualize.html#mode=edit
+
+007 Day-13-Ending-Code
+https://repl.it/@appbrewery/day-13-end
+
+007 Search-Stack-Overflow-for-Errors
+https://stackoverflow.com/questions/tagged/python
+
+008 Exercise-1-Debugging-Odd-or-Even
+https://app.codingrooms.com/management/assignments/365234/overview
+
+009 Exercise-2-Debugging-Leap-Year
+https://app.codingrooms.com/management/assignments/365235/overview
+
+010 Course-Fixes-Report-an-Issue
+https://forms.gle/fpNEQooYBX25gcG67
+
+010 Exercise-3-Debugging-FizzBuzz
+https://app.codingrooms.com/management/assignments/365243/overview
