@@ -203,3 +203,217 @@ def build_entity_extraction_tab():
 
 
 
+------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+import argparse
+import gradio as gr
+from gradio.themes.utils import colors
+import time
+# import torch
+import pandas as pd
+import numpy as np
+from PIL import Image,ImageDraw,ImageFont
+# import torch.nn.functional as F
+
+# from model_configs import MODELS
+import requests
+from gradio_modal import Modal
+
+num_chatbots = 2
+
+
+
+def build_entity_extraction_tab():
+
+
+    with gr.Row():
+        with gr.Column(scale=3):
+            inputText = gr.Textbox(visible=False, show_copy_button=True)
+            with gr.Accordion("case 1", open=True ,visible=True):
+                examples = gr.Examples(examples=['123','456'],
+                inputs=[inputText],
+                outputs=[inputText],
+                cache_examples=False)
+
+        with gr.Column(scale=9):
+            chat_states = [gr.State([]) for _ in range(num_chatbots)]
+            model_selectors = [None] * num_chatbots
+            chatbots = [None] * num_chatbots
+            json_viewers = [None] * num_chatbots
+
+            def change_textbox_(text):
+                return text
+
+            with gr.Row():
+                for i in range(num_chatbots):
+                    with gr.Column(scale=3):
+                        chat_states[i] = gr.State()
+                        model_selectors[i], chatbots[i], json_viewers[i] = build_single_chatbot(i)            
+
+            with gr.Row():
+
+                with gr.Column(scale=8):
+                    submit = gr.Button(value='Convert to grayscale') 
+                    chat_textbox = gr.Textbox(
+                        lines=2,
+                        show_label=False,
+                        visible=True)
+
+                    # submit.click(fn=change_textbox_, inputs=inputText, outputs=chat_textbox)   
+                    inputText.change(fn=change_textbox_, inputs=inputText, outputs=chat_textbox)   
+
+
+                with gr.Column(scale=2, min_width=100):
+                    submit_btn = gr.Button(value="Submit", variant="primary", visible=True)
+                    clear_btn = gr.Button(value="🗑️  Clear history", interactive=True)
+                    load_btn = gr.Button(value="Load Model", interactive=True)
+                with Modal(visible=False) as modal:
+                    gr.Markdown("<center>将会加载下列模型，预计需要几分钟，是否确认加载</center>")    
+                    gr.Markdown("<center>qwen-7b, qwen-8b</center>")    
+                    
+                    with gr.Group():
+                        with gr.Row():
+                            btn = gr.Button("YES", variant="primary")
+                            btn2 = gr.Button("NO", variant="secondary")
+
+
+
+                    
+
+
+        
+         
+
+        md = gr.Markdown()
+        submit_btn.click(
+            add_text,
+            [chat_textbox] + model_selectors,
+            chatbots + [chat_textbox],
+            show_progress = False
+        ).then(
+            predict, 
+            model_selectors + chatbots + [inputText],
+            chatbots + json_viewers)   
+        load_btn.click(lambda: Modal(visible=True), None, modal)    
+        btn2.click(lambda: Modal(visible=False), None, modal)       
+
+def load_model(chat_textbox):
+    print("trigger")
+    gr.Info('This is a warning message.')
+    print(chat_textbox)
+    return "hello world" 
+
+def predict(model_selector1, model_selectors2, 
+            chat_history1, chat_history2, image):
+    model_selectors = [model_selector1, model_selectors2]
+    chat_history_list = [chat_history1, chat_history2]
+    json_list = [None, None]
+    print(image)
+    
+    for i in range(num_chatbots):
+        model_selected = model_selectors[i]
+        if model_selected == "None":
+            chat_history = [[None, None]]
+        else:
+            time.sleep(20)
+            text = chat_history_list[i][0][0]
+            response = predict_single_http(model_selected, text, image)
+                    
+            chat_history = [[text, response]]
+            chat_history_list[i] = chat_history
+
+            print(response)
+            try:
+                json_list[i] = text_to_dataframe(response)
+            except:
+                json_list[i] = pd.DataFrame()
+
+        print(chat_history_list)
+        print(json_list)
+    return chat_history_list + json_list + ["??????"]
+
+def build_single_chatbot(chatbot_id): 
+    chatbot_id = str(chatbot_id)
+    gr.Markdown("# <h3>🕵️‍♂️ 自研Agent模型</h3>")
+    with gr.Group(elem_id="share-region-named"+chatbot_id):
+        with gr.Row(elem_id="model_selector_row"+chatbot_id):
+            model_selector = build_model_selector()
+            model_selector.change()
+            b = gr.Button("Refresh", scale=1)
+            b.click(build_model_selector, [], model_selector)
+        json_viewer = gr.Dataframe(visible=False)
+
+        with gr.Accordion("对话历史", open=True, visible=True) as chatbot_row:
+            chatbot = gr.Chatbot(
+                elem_id="chatbot"+chatbot_id,
+                elem_classes=["chatbot"+chatbot_id, "hide"],
+                label="Model "+chatbot_id,
+                height=600,
+            )
+    return model_selector, chatbot, json_viewer       
+
+def build_model_selector():
+    tab = '单意图任务'
+    model_names = ["None"]
+    pload = {
+        "tab": tab
+    }
+    # model_names += requests.post(f"http://{args.controller_host}:21001/list_models",json=pload).json()['model_names']
+    # model_names += requests.post(f"http://localhost:21001/list_models",json=pload).json()['model_names']
+    # model_names = ["自研Agent模型1", "自研Agent模型2", "自研Agent模型3"]
+
+    model_selector = gr.Dropdown(
+                choices= model_names,
+                value=model_names[-1],
+                interactive=True,
+                show_label=False,
+                container=False,
+                scale=5
+            )
+    return model_selector
+
+def add_text(text, model_selector1, model_selector2):
+    chat_history_list = [None, None]
+    model_selectors = [model_selector1, model_selector2]
+    for i in range(num_chatbots):
+        if model_selectors[i] != "None":
+            chat_history = [[text, None]]
+            chat_history_list[i] = chat_history
+    return chat_history_list + [""] 
+
+def predict_single_http(model_name, text, image):
+    # try:
+        # Stream output
+    # args = get_args()
+    # print(args.port)
+    # print("---------" + args.controller_host)
+    controller_address = 'http://localhost:21001/get_worker_address'
+    headers = {"User-Agent": "Demo Client"}
+    pload = {
+        "model": model_name,
+        'text': text,
+        'image': image
+
+    }
+    print(pload)
+    # model server addr
+    # worker_addr = requests.post(controller_address, json=pload).json()['address']
+    # print(worker_addr)
+    # try:
+    #     # resp
+    #     response = requests.post(worker_addr + "/worker_generate",
+    #         headers=headers, json=pload, stream=False, timeout=10).json()
+    # except:
+    #     response = "似乎卡住了，再试一下呢"
+    response = ["123"]
+    print(response)
+    time.sleep(2)
+    return response          
+
+
+
+
