@@ -205,10 +205,6 @@ def build_entity_extraction_tab():
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
 import argparse
 import gradio as gr
 from gradio.themes.utils import colors
@@ -281,10 +277,6 @@ def build_entity_extraction_tab():
                             btn2 = gr.Button("NO", variant="secondary")
 
 
-
-                    
-
-
         
          
 
@@ -299,13 +291,10 @@ def build_entity_extraction_tab():
             model_selectors + chatbots + [inputText],
             chatbots + json_viewers)   
         load_btn.click(lambda: Modal(visible=True), None, modal)    
+        # load_btn.click(fn=load_model, inputs=gr.Text(),outputs=gr.Text())  
         btn2.click(lambda: Modal(visible=False), None, modal)       
 
-def load_model(chat_textbox):
-    print("trigger")
-    gr.Info('This is a warning message.')
-    print(chat_textbox)
-    return "hello world" 
+
 
 def predict(model_selector1, model_selectors2, 
             chat_history1, chat_history2, image):
@@ -343,8 +332,11 @@ def build_single_chatbot(chatbot_id):
         with gr.Row(elem_id="model_selector_row"+chatbot_id):
             model_selector = build_model_selector()
             model_selector.change()
-            b = gr.Button("Refresh", scale=1)
-            b.click(build_model_selector, [], model_selector)
+            print(model_selector.value)
+            load_b = gr.Button("加载模型", scale=1, elem_id="model_selector_row"+chatbot_id)
+            # load_b.click(build_model_selector, [], model_selector)
+            # load_b.click(fn=load_model, inputs=gr.Text(), outputs=gr.Text())
+            load_b.click(fn=load_model, inputs=[model_selector, gr.State("加载模型")], outputs=load_b)
         json_viewer = gr.Dataframe(visible=False)
 
         with gr.Accordion("对话历史", open=True, visible=True) as chatbot_row:
@@ -354,9 +346,20 @@ def build_single_chatbot(chatbot_id):
                 label="Model "+chatbot_id,
                 height=600,
             )
-    return model_selector, chatbot, json_viewer       
+    return model_selector, chatbot, json_viewer   
+
+def load_model(model_name, button_label):
+    if button_label == "加载模型":
+        # Logic to load the model
+        print(f"Loading model: {model_name}")
+        return "卸载模型"
+    else:
+        # Logic to unload the model
+        print(f"Unloading model: {model_name}")
+        return "加载模型"
 
 def build_model_selector():
+    print("click")
     tab = '单意图任务'
     model_names = ["None"]
     pload = {
@@ -364,7 +367,7 @@ def build_model_selector():
     }
     # model_names += requests.post(f"http://{args.controller_host}:21001/list_models",json=pload).json()['model_names']
     # model_names += requests.post(f"http://localhost:21001/list_models",json=pload).json()['model_names']
-    # model_names = ["自研Agent模型1", "自研Agent模型2", "自研Agent模型3"]
+    model_names = ["qwen-7b", "qwen-8b", "qwen-9b","None"]
 
     model_selector = gr.Dropdown(
                 choices= model_names,
@@ -412,7 +415,7 @@ def predict_single_http(model_name, text, image):
     response = ["123"]
     print(response)
     time.sleep(2)
-    return response          
+    return response               
 
 
 
